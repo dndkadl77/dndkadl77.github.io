@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: .5px solid #0004ff!important; */
+    border: .5px solid #0004ff!important;
 }
 .commend {
     position: relative;
@@ -10,33 +10,57 @@
 }
 .header {
     position: relative;
-    margin-top: 10px;
+}
+.main_header {
+    position: fixed;
+    left: 200px;
+    width: 100vw;
+    height: 0;
 }
 .logo {
+    position: fixed;
     left: 0;
     width: 200px;
     height: auto;
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 32px;
-    padding: 5px;
+    font-size: 42px;
+    padding: 30px 5px 30px 5px;
     text-decoration: none;
+    background-color: #aaa;
+    color: #fff;
+    font-weight: bold;
 }
 .left_box {
     position: fixed;
-    width: 200px;
-    height: 1100px;
+    left: 0;
+    top: 102px;
+    width: 100vw;
+    height: 100vw;
+    max-height: 1440px;
+    max-width: 200px;
     background-color: #aaa;
     color: #fff;
+    padding: 5px;
+}
+ul {
+    /* border-bottom: 1px solid #fff!important; */
 }
 .m_1 {
     position: relative;
-    text-align: center;
+    text-align: left;
     margin: 5px 0px 5px 0px;
     transition: 0.3s;
-    padding: 5px;
-    font-size: 18px;
+    padding: 15px 5px 15px 30px;
+    font-size: 22px;
+    font-weight: normal;
 }
+/* .icon {
+    float: left;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0px 30px 0px 7px;
+} */
 .m_1:hover {
     box-shadow: 0 4px 16px rgba(0,79,255,0.3);
     cursor: pointer;
