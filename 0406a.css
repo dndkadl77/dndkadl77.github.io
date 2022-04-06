@@ -1,0 +1,24 @@
+body, p { margin: 0; }
+#box1 {
+    position: relative;
+    width: 800px;
+    left: 60px;
+    top: 0;
+    background-color: #00ff00;
+    font-size: 0; /* inline 속성의 자식요소 간 공백 제거 */
+}
+#box1 > img {
+    width: 40%;
+}
+#box2 { /* 이미지를 박스의 배경으로 사용하는 경우 */
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    left: 400px;
+    top: 400px;
+    background-image: url("cat.png");
+    background-size: cover; /* contain:이미지 전체가 보이도록, cover: 이미지가 박스에 가득 차게 */
+    background-position-y: center;
+    background-color: #0051ff;
+    font-size: 0; /* inline 속성의 자식요소 간 공백 제거 */
+}
