@@ -30,7 +30,7 @@
     position: absolute;
     left: 45%;
     top: 50%;
-    width: 300px;
+    width: 500px;
     height: 30px;
     transform: translate(-50%, -50%);
     background-color: #eee;
@@ -54,14 +54,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 25px;
-
 }
-/* #search_icon > img {
-    width: 30px;
-    height: 30px;
-    left: 50%;
-    top: 50%;
-} */
 #search_icon:hover {
     cursor: pointer;
 }
