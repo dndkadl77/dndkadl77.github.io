@@ -86,7 +86,7 @@
     left: 0;
     top: 103px;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     max-height: 1440px;
     max-width: 200px;
     background-color: #ccc;
@@ -102,7 +102,7 @@ ul {
     margin: 5px 0px 5px 0px;
     transition: 0.3s;
     padding: 10px 5px 15px 20px;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: normal;
 }
 /* .icon {
