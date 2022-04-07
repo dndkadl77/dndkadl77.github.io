@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: .5px solid #0004ff!important; */
+    border: .5px solid #0004ff!important;
 }
 /* Font---------------------------------------------------------------------------------- */
 @font-face {
@@ -9,13 +9,14 @@
     font-weight: normal;
     font-style: normal;
 }
-/* style--------------------------------------------------------------------------------- */
+/* Style--------------------------------------------------------------------------------- */
 .commend {
     position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #fff;
 }
+/* Header-------------------------------------------------------------------------------- */
 .header {
     position: relative;
 }
@@ -31,7 +32,7 @@
     left: 45%;
     top: 50%;
     width: 23vw;
-    height: 30px;
+    height: 28px;
     transform: translate(-50%, -50%);
     background-color: #eee;
     border: 1px solid #ccc;
@@ -45,7 +46,7 @@
 #search_icon {
     position: absolute;
     width: 50px;
-    height: 28px;
+    height: 27px;
     right: 0;
     top: 0;
     background-color: #ccc;
@@ -76,6 +77,7 @@
     margin-left: 32px;
     margin-right: 32px;
 }
+/* Left Box------------------------------------------------------------------------------ */
 .left_box {
     position: fixed;
     left: 0;
@@ -114,4 +116,23 @@ ul {
     transform: scale(1.2);
     background-color: #fff;
     color: #000;
+}
+/* Main Box------------------------------------------------------------------------------ */
+.main_box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    left: 200px;
+    top: 102px;
+    padding: 30px;
+    font-family: 'Cafe24Ssurround';
+}
+.main_box > h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #555;
+}
+.video > iframe {
+    margin-right: 20px;
+    float: left;
 }
