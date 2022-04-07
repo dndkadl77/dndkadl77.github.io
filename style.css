@@ -72,7 +72,7 @@
     height: auto;
     text-align: center;
     font-size: 42px;
-    padding: 20px 5px 40px 5px;
+    padding: 30px 5px 30px 5px;
     text-decoration: none;
     background-color: #ccc;
     color: #fff;
@@ -80,6 +80,8 @@
 }
 .logo > h1 {
     font-family: 'Cafe24Ssurround';
+    margin-left: 32px;
+    margin-right: 32px;
 }
 .left_box {
     position: fixed;
@@ -103,7 +105,8 @@ ul {
     transition: 0.3s;
     padding: 10px 5px 15px 20px;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: lighter;
+    font-family: 'Cafe24Ssurround';
 }
 /* .icon {
     float: left;
