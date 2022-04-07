@@ -13,10 +13,8 @@
 .commend {
     position: absolute;
     width: 100vw;
-    max-width: 1920px;
     height: 100vh;
-    max-height: 1080px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 /* Header-------------------------------------------------------------------------------- */
 .header {
@@ -66,7 +64,7 @@
 .logo {
     position: fixed;
     left: 0;
-    width: 200px;
+    width: 10vw;
     height: auto;
     text-align: center;
     font-size: 42px;
@@ -75,6 +73,7 @@
     background-color: #ccc;
     color: #fff;
     font-weight: bold;
+    z-index: 4;
 }
 .logo > h1 {
     font-family: 'Cafe24Ssurround';
@@ -86,10 +85,10 @@
     position: fixed;
     left: 0;
     top: 103px;
-    width: 100vw;
+    width: 10vw;
     height: 100vh;
-    max-height: 1440px;
-    max-width: 200px;
+    /* max-height: 1440px;
+    max-width: 200px; */
     background-color: #ccc;
     color: #fff;
     padding: 5px;
@@ -124,23 +123,35 @@ ul {
 /* Main Box------------------------------------------------------------------------------ */
 .main_box {
     position: relative;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     left: 200px;
     top: 102px;
-    padding: 2vw;
+    padding: 30px;
     font-family: 'Cafe24Ssurround';
 }
-.main_box > h2 {
-    left: 0;
-    width: 5vw;
+.video {
+    position: relative;
+    height: 390px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: rgba(230, 231, 255, 0.596);
+}
+.video > h2 {
+    position: relative;
+    left: 10px;
+    top: 10px;
+    width: 100px;
     font-size: 32px;
     margin-bottom: 10px;
     color: #555;
 }
-.video > iframe {
-    margin-right: 10px;
-    /* float: left; */
-    border: 2px solid black;
+.iframe {
+    margin: 20px 30px;
+    height: 315px;
+    padding: 0 18px;
+}
+.iframe > iframe {
+    border: 1px solid #000;
     border-radius: 8px;
 }
