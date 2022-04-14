@@ -92,6 +92,7 @@
     background-color: #ccc;
     color: #fff;
     padding: 5px;
+    z-index: 2;
 }
 ul {
     border-bottom: 1px solid #fff!important;
@@ -121,38 +122,3 @@ ul {
     color: #000;
 }
 /* Main Box------------------------------------------------------------------------------ */
-.main_box {
-    position: relative;
-    width: 90vw;
-    height: 100vh;
-    left: 200px;
-    top: 102px;
-    padding: 30px;
-    font-family: 'Cafe24Ssurround';
-}
-.video {
-    position: relative;
-    width: 87vw;
-    height: 390px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: rgba(230, 231, 255, 0.596);
-}
-.video > h2 {
-    position: relative;
-    left: 10px;
-    top: 10px;
-    width: 100px;
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #555;
-}
-.iframe {
-    margin: 20px 30px;
-    height: 315px;
-    padding: 0 18px;
-}
-.iframe > iframe {
-    border: 1px solid #000;
-    border-radius: 8px;
-}
