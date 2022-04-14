@@ -7,13 +7,45 @@
     width: 100vw;
     height: 100vh;
 }
+/* Font ------------------------------------------------ */
+@font-face {
+    font-family: 'Cafe24Ohsquareair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Bg Img ---------------------------------------------- */
 .bg_img {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.06);
+    background-image: url(img/사진모음/2학기/그래픽스_6.jpg);
+    background-position: center;
+    background-size: cover;
     z-index: 1;
+}
+.txt_box {
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.txt_box > h1 {
+    font-size: 2vw;
+    font-family: 'Cafe24Ohsquareair';
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+}
+.alpha {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
 }
 /* Main ------------------------------------------------ */
 .main {
@@ -28,10 +60,10 @@
 .menu {
     position: fixed;
     width: 12vw;
-    height: 23vw;
+    height: 21vw;
     left: 30px;
     top: 30px;
-    border-radius: 18px;    
+    border-radius: 12px;    
     background-color: rgba(0,0,0,0);
     z-index: 2;
     transition: 0.5s;
@@ -47,21 +79,20 @@
 }
 .menu:hover {
     background-color: rgba(0,0,0,0.06);
-    color: #fff;
+    color: #aaa;
 }
 .menu_list {
     font-size: 1vw;
-    /* overflow: hidden; */
 }
 .list_1 {
     margin: 1px 0 0 0;    
     padding: 19px;
-    /* overflow: hidden; */
 }
 .list_1:hover {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.2);
     box-shadow: 0 5px 5px rgba(0,0,0,0.1);
     transition: 0.5s;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
+    color: #fff;
 }
