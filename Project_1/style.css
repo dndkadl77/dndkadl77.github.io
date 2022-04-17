@@ -33,7 +33,7 @@
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    transition: all .5s;
+    transition: all .6s;
 }
 .section .slidelist > li > a {
     display: block;
@@ -52,11 +52,11 @@
 }
 .section .slidelist .left {
     left: 30px;
-    background: url(./img/사진모음/icon/left-arrow.png) center center / 100% no-repeat;
+    background: url(./img/icon/left-arrow.png) center center / 100% no-repeat;
 }
 .section .slidelist .right {
     right: 30px;
-    background: url(./img/사진모음/icon/right-arrow.png) center center / 100% no-repeat;
+    background: url(./img/icon/right-arrow.png) center center / 100% no-repeat;
 }
 .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
