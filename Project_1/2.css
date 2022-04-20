@@ -80,26 +80,39 @@
     top: 58%;
     font-weight: lighter;
 }
+.hobby {
+    position: relative;
+    width: 19vw;
+    height: 4vw;
+    left: 50% ;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
 .hobby > h2 {
     position: absolute;
     font-size: 1.5vw;
-    left: 10%;
-    top: 65%;
-    width: 15vw;
+    width: 20vw;
     border-bottom: 1px solid #E9F0F2!important;
+    font-weight: bold;
+}
+.hobbylist {
+    position: relative;
+    width: auto;
+    height: 1.5vw;
+    top: 40%;
+    
 }
 .hobbylist > a > li {
-    position: absolute;
     float: left;
     width: auto;
-    left: 10%;
-    top: 69%;
     text-align: center;
+    margin-right: 0.5vw;
+    margin-top: 0.3vw;
 }
 .hobbylist > a > li:hover {
     cursor: pointer;
     transform: scale(1.2);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 #h_list1 {
     background-color: #447EF2;
@@ -107,22 +120,49 @@
     border-radius: 20px;
 }
 #h_list2 {
-    position: absolute;
     background-color: #447EF2;
-    left: 22%;
     padding: 0.3vw 0.4vw 0.2vw 0.4vw;
     border-radius: 20px;
 }
 #h_list3 {
-    position: absolute;
     background-color: #447EF2;
-    left: 40%;
     padding: 0.3vw 0.4vw 0.2vw 0.4vw;
     border-radius: 20px;
 }
-
-
-
+.about {
+    position: relative;
+    width: 19vw;
+    height: 14vw;
+    left: 50% ;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+.about > h2 {
+    position: absolute;
+    font-size: 1.5vw;
+    width: 20vw;
+    border-bottom: 1px solid #E9F0F2!important;
+    font-weight: bold;
+}
+.aboutlist {
+    position: absolute;
+    top: 20%;
+    font-size: 1.2vw;
+    font-weight: lighter;
+}
+.aboutlist > a > li {
+    margin-bottom: 1vw;
+}
+.aboutcontent {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 1.2vw;
+    font-weight: lighter;
+}
+.aboutcontent > a > li {
+    margin-bottom: 1vw;
+}
 
 .main_box {
     background-color: #E9F0F2;
