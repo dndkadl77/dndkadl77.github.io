@@ -86,11 +86,11 @@ body {
 }
 .left_box > h1 {
     position: absolute;
-    font-size: 1.5vw;
+    font-size: 30px;
     left: 50% ;
     transform: translateX(-50%);
     top: 53%;
-    width: 55%;
+    width: 19vw;
     font-weight: lighter;
 }
 .hobby {
@@ -129,7 +129,6 @@ body {
     left: 50% ;
     transform: translateX(-50%);
     top: 65%;
-    margin: 0;
 }
 .about > h2 {
     position: absolute;
@@ -143,6 +142,7 @@ body {
     top: 20%;
     font-size: 1.2vw;
     font-weight: lighter;
+    height: 9.5vw;
 }
 .aboutlist > a > li {
     margin-bottom: 1vw;
@@ -151,11 +151,12 @@ body {
     position: absolute;
     top: 20%;
     left: 40%;
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: lighter;
+    height: 16.5vh;
 }
 .aboutcontent > a > li {
-    margin-bottom: 1.2vw;
+    margin-bottom: 1.1vw;
 }
 .main_box {
     background-color: rgba(233, 240, 242, 0.5);
@@ -168,7 +169,7 @@ body {
 .profile_1 {
     position: absolute;
     width: 20vw;
-    height: 20vh;
+    height: 24.5vh;
     top: 20%;
     left: 43%;
 }
@@ -191,10 +192,10 @@ body {
 }
 .profile_2 {
     position: absolute;
-    top: 29%;
+    top: 30%;
     left: 61%;
     width: 20vw;
-    height: 20vh;
+    height: 14vh;
 }
 .profile_2 > p {
     color: #aaa;
