@@ -19,7 +19,7 @@ body {
 }
 .text_box1 {
     position: absolute;
-    left: 20%;
+    left: 21%;
     top: 40%;
     transform: translate(-50%, -50%);
 }
@@ -81,8 +81,7 @@ body {
 .left_box > h2 {
     position: absolute;
     font-size: 1vw;
-    left: 50% ;
-    transform: translateX(-50%);
+    left: 22%;
     top: 10%;
 }
 .left_box > h1 {
@@ -98,7 +97,7 @@ body {
     position: relative;
     width: 19vw;
     height: 4vw;
-    top: 60%;
+    top: 62%;
     left: 50% ;
     transform: translateX(-50%);
 }
