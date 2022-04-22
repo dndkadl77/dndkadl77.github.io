@@ -1,5 +1,5 @@
 * {
-    border: solid 1px red!important;
+    /* border: solid 1px red!important; */
 }
 body {
     overflow-x: hidden;
@@ -81,32 +81,37 @@ body {
 .left_box > h2 {
     position: absolute;
     font-size: 1vw;
-    left:20%;
+    left: 50% ;
+    transform: translateX(-50%);
     top: 10%;
 }
 .left_box > h1 {
     position: absolute;
-    font-size: 1.3vw;
-    left:20%;
+    font-size: 1.5vw;
+    left: 50% ;
+    transform: translateX(-50%);
     top: 53%;
+    width: 19vw;
     font-weight: lighter;
 }
 .hobby {
     position: relative;
     width: 19vw;
     height: 4vw;
-    left: 20% ;
     top: 60%;
+    left: 50% ;
+    transform: translateX(-50%);
 }
 .hobby > h2 {
     position: absolute;
     font-size: 1.2vw;
-    width: 18.5vw;
+    width: 19vw;
     border-bottom: 1px solid #E9F0F2;
     font-weight: bold;
 }
 .hobbylist {
-    position: relative;
+    position: absolute;
+    width: 19vw;
     height: 1.5vw;
     top: 40%;
     
@@ -120,15 +125,15 @@ body {
 .about {
     position: relative;
     width: 19vw;
-    height: 14vw;
-    left: 20% ;
+    height: 12vw;
+    left: 50% ;
+    transform: translateX(-50%);
     top: 65%;
-    /* transform: translate(-50%, -50%); */
 }
 .about > h2 {
     position: absolute;
     font-size: 1.2vw;
-    width: 18.5vw;
+    width: 19vw;
     border-bottom: 1px solid #E9F0F2;
     font-weight: bold;
 }
@@ -267,20 +272,3 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-/* .skill_icon {
-    position: absolute;
-    margin-right: 20vw;
-}
-#ai {
-    margin-right: 1vw;
-}
-#ps {
-    margin-right: 1vw;
-}
-#mx {
-    margin-right: 1vw;
-    border-radius: 30px;
-}
-#ut {
-    margin-right: 1vw;
-} */
