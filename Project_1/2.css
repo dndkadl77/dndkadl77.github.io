@@ -80,7 +80,7 @@ body {
 }
 .left_box > h2 {
     position: absolute;
-    font-size: 1vw;
+    font-size: 1.3vw;
     left: 22%;
     top: 10%;
 }
@@ -90,7 +90,7 @@ body {
     left: 50% ;
     transform: translateX(-50%);
     top: 53%;
-    width: 19vw;
+    width: 55%;
     font-weight: lighter;
 }
 .hobby {
@@ -112,8 +112,9 @@ body {
     position: absolute;
     width: 19vw;
     height: 1.5vw;
-    top: 40%;
-    
+    top: 45%;
+    font-size: 1.2vw;
+    font-weight: lighter;
 }
 .hobbylist > a > li {
     float: left;
@@ -206,7 +207,7 @@ body {
     position: absolute;
     width: 49.5vw;
     height: 30vh;
-    top: 50%;
+    top: 55%;
     left: 43%;
 }
 .skill > h2 {
@@ -222,6 +223,11 @@ body {
     position: absolute;
     width: 100%;
     height: 50%;
+    transition: 0.3s;
+}
+.skill_icon > div:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 .ai {
     position: absolute;
