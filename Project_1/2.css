@@ -326,6 +326,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #447EF2 ;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .page_3 > h1 {
     position: absolute;
@@ -342,4 +343,54 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border-bottom: 3px solid #E9F0F2 ;
+}
+.text_box3 {
+    position: relative;
+    top: 55%;
+    left: 60%;
+    color: #fff;
+    width: 35vw;
+    height: 20vw;
+}
+.text_box3 > div > h2 {
+    position: absolute;
+    font-weight: normal;
+    width: 50%;
+    font-size: 1.3vw;
+}
+.first_semester {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+}
+.first_semester > p {
+    position: relative;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    font-size: 1.3vw;
+    margin-bottom: 0.7vw;
+    font-weight: lighter;
+}
+.second_semester {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 40%;
+}
+.second_semester > p {
+    position: relative;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    font-size: 1.3vw;
+    margin-bottom: 0.7vw;
+    font-weight: lighter;
+}
+/* Page_4 ---------------------------------------------------------------------- */
+.page_4 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
 }
