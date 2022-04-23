@@ -279,3 +279,45 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+.skill_list {
+    position: absolute;
+    width: 100%;
+    height: 27%;
+    left: 0;
+    top: 73%;
+    text-align: center;
+}
+.skill_list > div > h2 {
+    font-size: 1.2vw;
+    font-weight: bold;
+    margin: 1vw 0;
+}
+.skill_list > div > p {
+    font-size: 1.1vw;
+}
+#ai {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+}
+#ps {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 20%;
+}#mx {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 40%;
+}#ut {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 60%;
+}#vs {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    left: 80%;
+}
