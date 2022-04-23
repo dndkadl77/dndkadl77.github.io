@@ -393,4 +393,120 @@ body {
     position: relative;
     width: 100vw;
     height: 100vh;
+    background-color: #E9F0F2;
 }
+.text_box4 {
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text_box4 > h1 {
+    font-weight: bold;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: #447EF2;
+}
+.text_box4 > p {
+    font-weight: normal;
+    font-size: 1vw;
+    line-height: 130%;
+    color: #77ACF2
+}
+
+.section {
+    position: relative;
+    width: 30vw;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    border: 1px solid black ;
+}
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap {
+    max-width: 30vw;
+    max-height: 100vh;
+    top: 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .6s;
+}
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section .slidelist > li > a img {
+    width: 100%;
+}
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform:  translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.section .slidelist .left {
+    left: 5px;
+    background: url(./img/icon/left-arrow.png) center center / 60% no-repeat;
+}
+.section .slidelist .right {
+    right: 5px;
+    background: url(./img/icon/right-arrow.png) center center / 60% no-repeat;
+}
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+.section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+.section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-900%);}
+.section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1000%);}
+.section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1100%);}
+.section input[id="slide13"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1200%);}
+.section input[id="slide14"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1300%);}
+.section input[id="slide15"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1400%);}
+.section input[id="slide16"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1500%);}
+.section input[id="slide17"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1600%);}
+.section input[id="slide18"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1700%);}
+.section input[id="slide19"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1800%);}
+.section input[id="slide20"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1900%);}
+.section input[id="slide21"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2000%);}
+.section input[id="slide22"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2100%);}
+.section input[id="slide23"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2200%);}
+.section input[id="slide24"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2300%);}
+.section input[id="slide25"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2400%);}
+.section input[id="slide26"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2500%);}
+.section input[id="slide27"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2600%);}
+.section input[id="slide28"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2700%);}
+.section input[id="slide29"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2800%);}
+.section input[id="slide30"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-2900%);}
+.section input[id="slide31"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3000%);}
+.section input[id="slide32"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3100%);}
+.section input[id="slide33"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3200%);}
+.section input[id="slide34"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3300%);}
+.section input[id="slide35"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3400%);}
+.section input[id="slide36"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3500%);}
+.section input[id="slide37"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3600%);}
+.section input[id="slide38"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3700%);}
+.section input[id="slide39"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3800%);}
+.section input[id="slide40"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-3900%);}
+.section input[id="slide41"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-4000%);}
+.section input[id="slide42"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-4100%);}
