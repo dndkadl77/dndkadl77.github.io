@@ -327,19 +327,3 @@ body {
     height: 100vh;
     background-color: #447EF2 ;
 }
-.page_3 > h1 {
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    font-size: 4vw;
-    font-weight: bold;
-    color: #fff;
-}
-.line_1 {
-    position: absolute;
-    width: 83.5vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-bottom: 3px solid #E9F0F2 ;
-}
