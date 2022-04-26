@@ -6,6 +6,34 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* navigation */
+.navigation {
+    position: fixed;
+    width: 90vw;
+    height: 2vw;
+    left: 50%;
+    top: 2%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.ng_list {
+    position: relative;
+    float: left;
+    left: 50%;
+    margin: 2vw;
+    font-size: 1.1vw;
+    transition: 0.2s;
+    color: #aaa;
+}
+.ng_list:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    color: #000;
+}
+.navigation > ul > li > a {
+    text-decoration: none;
+}
 
 /* page_1 ----------------------------------------------- */
 .page_1{
