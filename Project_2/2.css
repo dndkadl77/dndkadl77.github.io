@@ -1,5 +1,58 @@
+/* * {border: 1px solid red !important;} */
+
 body {
     overflow-x: hidden;
+}
+/* 네비게이션 */
+.nv {
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 8vh;
+    z-index: 2;
+}
+.logo {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+}
+.logo > a {
+    position: relative;
+    color: #000;
+    font-size: 1vw;
+    top: 20%;
+    left: 25%;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.logo > a:hover {
+    transition: 0.2s;
+    color: #614BF2;
+}
+.menu {
+    position: relative;
+    width: 50vw;
+    height: 8vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu > a {
+    position: relative;
+    color: #aaa;
+    font-size: 1vw;
+    top: 30%;
+    left: 40%;
+    text-decoration: none;
+    margin-left: 1vw;
+    transition: 0.2s;
+}
+.menu > a:hover {
+    transition: 0.2s;
+    color: #614BF2;
 }
 /* page1 */
 .page1 {
@@ -20,9 +73,10 @@ body {
 .text_box1 {
     position: relative;
     color: #f2f2f2;
-    top: 49%;
-    left: 77%;
-    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 27%;
+    height: 65%;
+    /* transform: translate(-50%, -50%); */
 }
 .text_box1 > h1 {
     font-size: 9vw;
@@ -45,6 +99,6 @@ body {
     left: 16%;
 }
 .text_box1 > h5 {
-    position: relative;
-    font-size: 6vw;
+    position: absolute;
+    font-size: 6.5vw;
 }
