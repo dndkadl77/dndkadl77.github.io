@@ -19,7 +19,7 @@ body {
     height: 8vh;
 }
 .logo > a {
-    position: relative;
+    position: absolute;
     color: #000;
     font-size: 1vw;
     top: 20%;
@@ -33,7 +33,7 @@ body {
     color: #614BF2;
 }
 .menu {
-    position: relative;
+    position: absolute;
     width: 50vw;
     height: 8vh;
     top: 50%;
@@ -42,6 +42,7 @@ body {
 }
 .menu > a {
     position: relative;
+    float: left;
     color: #aaa;
     font-size: 1vw;
     top: 30%;
@@ -71,7 +72,7 @@ body {
     height: 60%;
 }
 .text_box1 {
-    position: relative;
+    position: absolute;
     color: #f2f2f2;
     top: 18%;
     left: 27%;
@@ -79,6 +80,7 @@ body {
     /* transform: translate(-50%, -50%); */
 }
 .text_box1 > h1 {
+    position: relative;
     font-size: 9vw;
     font-weight: bold;
 }
@@ -99,6 +101,6 @@ body {
     left: 16%;
 }
 .text_box1 > h5 {
-    position: absolute;
+    position: relative;
     font-size: 6.5vw;
 }
