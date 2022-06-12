@@ -1,5 +1,5 @@
 /* * {border: 1px solid red !important;} */
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 body {
     overflow-x: hidden;
 }
@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 8vh;
     z-index: 2;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .logo {
     position: absolute;
@@ -45,11 +46,12 @@ body {
     float: left;
     color: #aaa;
     font-size: 1vw;
-    top: 30%;
+    top: 50%;
     left: 40%;
     text-decoration: none;
     margin-left: 1vw;
     transition: 0.2s;
+    transform: translateY(-50%);
 }
 .menu > a:hover {
     transition: 0.2s;
@@ -61,6 +63,7 @@ body {
     background-color: #F2F2F2;
     width: 100vw;
     height: 100vh;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .box1 {
     position: absolute;
