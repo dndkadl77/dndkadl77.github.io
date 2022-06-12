@@ -152,17 +152,14 @@ footer {
     text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
     .item-container {
         width: 50%;
         padding-top: 50%;
     } 
-    #social {
-        display: none;
-    }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
     .item-container {
         width: 100%;
         padding-top: 100%;

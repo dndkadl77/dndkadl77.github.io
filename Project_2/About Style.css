@@ -119,38 +119,38 @@ body {
     height: 50%;
 }
 .ai {
-    position: relative;
+    position: absolute;
     background-color: #705CF2;
     width: 70%;
     height: 10%;
-    margin-bottom: 6%;
 }
 .ps {
-    position: relative;
+    position: absolute;
     background-color: #705CF2;
     width: 50%;
     height: 10%;
-    margin-bottom: 6%;
+    top: 25%;
 }
 .dm {
-    position: relative;
+    position: absolute;
     background-color: #705CF2;
     width: 60%;
     height: 10%;
-    margin-bottom: 5.5%;
+    top: 50%;
 }
 .ut {
-    position: relative;
+    position: absolute;
     background-color: #705CF2;
     width: 50%;
     height: 10%;
-    margin-bottom: 5.5%;
+    top: 75%;
 }
 .vs {
-    position: relative;
+    position: absolute;
     background-color: #705CF2;
     width: 90%;
     height: 10%;
+    top: 100%;
 }
 .ability > h2 {
     font-size: 2vw;
@@ -192,4 +192,82 @@ body {
 .education > p {
     margin-bottom: 3%;
     font-size: 1vw;
+}
+/* 태블릿 */
+@media (max-width: 1024px) {
+    .textbox_2 {
+        width: 50%;
+    }
+    .profile {
+        width: 50%;
+    }
+    .contact {
+        width: 50%;
+    }
+    .ability {
+        width: 50%;
+    }
+    .education {
+        width: 50%;
+    }
+}
+/* 모바일 */
+@media (max-width: 640px) {
+    .textbox_2 {
+        width: 70%;
+        position: relative;
+        left: 25%;
+    }
+    .profile {
+        width: 70%;
+        position: absolute;
+        left: 0;
+    }
+    .contact {
+        width: 70%;
+        position: absolute;
+        left: 0;
+        top: 25%;
+    }
+    .ability {
+        width: 70%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+    .education {
+        width: 70%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
+    .ai {
+        position: absolute;
+        width: 70%;
+        height: 7%;
+    }
+    .ps {
+        position: absolute;
+        width: 50%;
+        height: 7%;
+        top: 13%;
+    }
+    .dm {
+        position: absolute;
+        width: 60%;
+        height: 7%;
+        top: 26%;
+    }
+    .ut {
+        position: absolute;
+        width: 50%;
+        height: 7%;
+        top: 39%;
+    }
+    .vs {
+        position: absolute;
+        width: 90%;
+        height: 7%;
+        top: 52%;
+    }
 }
