@@ -115,10 +115,40 @@ body {
     left: 30%;
     width: 70%;
     height: 50%;
-    ;
 }
 .ai {
-    background-color: #705CF2
+    position: relative;
+    background-color: #705CF2;
+    width: 70%;
+    height: 10%;
+    margin-bottom: 6%;
+}
+.ps {
+    position: relative;
+    background-color: #705CF2;
+    width: 50%;
+    height: 10%;
+    margin-bottom: 6%;
+}
+.dm {
+    position: relative;
+    background-color: #705CF2;
+    width: 60%;
+    height: 10%;
+    margin-bottom: 5.5%;
+}
+.ut {
+    position: relative;
+    background-color: #705CF2;
+    width: 50%;
+    height: 10%;
+    margin-bottom: 5.5%;
+}
+.vs {
+    position: relative;
+    background-color: #705CF2;
+    width: 90%;
+    height: 10%;
 }
 .ability > h2 {
     font-size: 2vw;
@@ -151,4 +181,13 @@ body {
     left: 50%;
     width: 30%;
     height: 45%;
+}
+.education > h2 {
+    font-size: 2vw;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.education > p {
+    margin-bottom: 3%;
+    font-size: 1vw;
 }
