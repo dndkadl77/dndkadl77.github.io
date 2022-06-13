@@ -53,19 +53,20 @@ body {
     transition: 0.2s;
     transform: translateY(-50%);
 }
-.slidemeun {
-    position: absolute;
-    width: 10vw;
-    height: 8vh;
-}
-.slidemaun > img {
-    position: relative;
-    left: 90%;
-    top: 20%;
-}
 .menu > a:hover {
     transition: 0.2s;
     color: #614BF2;
+}
+.slidemenu {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    left: 90%;
+}
+.slidemenu > a > img {
+    position: absolute;
+    left: 55%;
+    top: 15%;
 }
 /* page2 */
 .page2 {
@@ -74,6 +75,17 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Nanum Gothic', sans-serif;
+}
+.slidemenu {
+    position: absolute;
+    width: 10vw;
+    height: 8vh;
+    left: 90%;
+}
+.slidemenu > a > img {
+    position: absolute;
+    left: 55%;
+    top: 15%;
 }
 .header {
     position: relative;
@@ -325,12 +337,8 @@ body {
         font-size: 4vw;
     }
     .menu > a {
-        font-size: 0;
-    }
-    .slidemaun {
-        position: relative;
-        width: 20vw;
-        height: 8vw;
-        left: 90%;
+        font-size: 3vw;
+        left: 20%;
+        margin-right: 3vw;
     }
 }

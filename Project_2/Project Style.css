@@ -164,4 +164,27 @@ footer {
         width: 100%;
         padding-top: 100%;
     } 
+    .nv {
+        background-color: rgba(0,0,0,0);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 8vh;
+        z-index: 2;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .logo {
+        position: absolute;
+        width: 20vw;
+        height: 8vh;
+    }
+    .logo > a {
+        font-size: 4vw;
+    }
+    .menu > a {
+        font-size: 3vw;
+        left: 20%;
+        margin-right: 3vw;
+    }
 }
