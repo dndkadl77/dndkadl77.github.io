@@ -1,5 +1,6 @@
 /* * {border: 1px solid red !important;} */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 body {
     overflow-x: hidden;
 }
@@ -12,7 +13,7 @@ body {
     width: 100vw;
     height: 8vh;
     z-index: 2;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .logo {
     position: absolute;
@@ -63,7 +64,7 @@ body {
     background-color: #F2F2F2;
     width: 100vw;
     height: 100vh;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .box1 {
     position: absolute;
@@ -80,32 +81,34 @@ body {
     top: 18%;
     left: 27%;
     height: 65%;
-    /* transform: translate(-50%, -50%); */
 }
 .text_box1 > h1 {
     position: relative;
     font-size: 8.5vw;
-    font-weight: bold;
+    font-weight: 900;
 }
 .text_box1 > h2 {
     position: relative;
     font-size: 6vw;
     left: 20%;
+    font-weight: 300;
 }
 .text_box1 > h3 {
     position: relative;
     left: 5%;
     font-size: 4vw;
+    font-weight: 700;
 }
 .text_box1 > h4 {
     position: relative;
     font-size: 7vw;
-    font-weight: lighter;
+    font-weight: 100;
     left: 16%;
 }
 .text_box1 > h5 {
     position: relative;
     font-size: 6vw;
+    font-weight: 400;
 }
 
 
@@ -118,7 +121,7 @@ body {
         width: 100vw;
         height: 8vh;
         z-index: 2;
-        font-family: 'Nanum Gothic', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
     }
     .logo {
         position: absolute;
@@ -132,5 +135,41 @@ body {
         font-size: 3vw;
         left: 20%;
         margin-right: 3vw;
+    }
+
+    .box1 {
+        width: 90%;
+        height: 35%;
+    }
+    .text_box1 {
+        left: 5%;
+        top: 30%;
+        width: 100%;
+        height: 60%;
+    }
+    .text_box1 > h1 {
+        position: relative;
+        font-size: 16.5vw;
+        font-weight: bold;
+    }
+    .text_box1 > h2 {
+        position: relative;
+        font-size: 11vw;
+        left: 20%;
+    }
+    .text_box1 > h3 {
+        position: relative;
+        left: 5%;
+        font-size: 8vw;
+    }
+    .text_box1 > h4 {
+        position: relative;
+        font-size: 12vw;
+        font-weight: lighter;
+        left: 16%;
+    }
+    .text_box1 > h5 {
+        position: relative;
+        font-size: 11.5vw;
     }
 }
