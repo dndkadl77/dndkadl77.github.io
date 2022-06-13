@@ -165,7 +165,7 @@ footer {
         padding-top: 100%;
     } 
     .nv {
-        background-color: rgba(0,0,0,0);
+        background-color: #fff;
         position: fixed;
         top: 0;
         left: 0;
