@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="subject.css">  <!-- 이 페이지의 CSS파일 -->
+    <title>기초디지털표현</title> <!-- 과목명 쳐쓰셈 -->
+</head>
+
+<body>
+
+
+
+
+
+<div id="nav"> <!-- 상단부분 헤더임. 홈버튼(뒤로가기)이랑 과목명, 햄버거 버튼이 여기에 위치함.   -->
+
+	<div id="navComp_a">
+		<div id="exit"><img src="images/left.svg"></div>
+		<p id="exitNoti">홈으로</p>
+	</div>
+
+	<div id="navComp_b">
+		<p id="subject">기초디지털표헌</p> <!-- 여기도 과목명 쳐 쓰시고 -->
+	</div>
+
+	<div id="navComp_c">
+		<div id="ham"><img src="images/ham.svg"></div>
+	</div>
+		
+
+
+		
+		
+	<div id="burger"> <!-- 모바일 햄버거임. PC화면에서는 노출되지 않습니다. -->
+		
+		<img id="burger_x" src="images/Xw.svg">
+
+		<div class='category'>
+			<a class="neck" href="dxdaward.html">DxDesign Award</a>
+			<br><br>
+			<a class="neck" href="about.html">About Showcase</a>
+			<br><br><br>
+			<a class="neck" href="http://dxdesign.kr/">DxDesign.kr ⤴</a>
+			<br><br>
+			<a class="neck" href="https://www.facebook.com/dxdesign.cu.ac.kr/">DxD Facebook ⤴</a>
+			<br><br>
+			<a class="neck" href="https://www.instagram.com/dcudxd/">DxD Instagram ⤴</a>
+		</div>
+
+
+		<div class='category'><!-- 과목명이랑 링크(html파일) 수정하시길 바람. -->
+			<p class="head">3학년</p>
+			<a class="neck" href="3_info.html">인포메이션디자인</a>
+			<br><br>
+			<a class="neck" href="3_brnd.html">브랜딩과뉴미디어</a>
+			<br><br>
+			<a class="neck" href="3_intr.html">인터랙션디자인</a>
+			<br><br>
+			<a class="neck" href="3_mgrp.html">모션그래픽</a>
+			<br><br>
+			<a class="neck" href="3_entr.html">엔터테인먼트디자인2</a>
+			<br><br><br>
+			<p class="head">2학년</p>
+			<a class="neck" href="2_info.html">인포메이션그래픽스</a>
+			<br><br>
+			<a class="neck" href="2_3dcg.html">3D컴퓨터그래픽스1</a>
+			<br><br>
+			<a class="neck" href="2_webd.html">웹디자인</a>
+			<br><br>
+			<a class="neck" href="2_anim.html">디지털애니메이션</a>
+			<br><br>
+			<a class="neck" href="2_cont.html">디지털콘텐츠디자인1</a>
+			<br><br><br>
+			<p class="head">1학년</p>
+			<a class="neck" href="1_basc.html">기초디지털표현</a>
+			<br><br>
+			<a class="neck" href="1_typo.html">디지털타입페이스</a>
+			<br><br>
+			<a class="neck" href="1_gest.html">디지털조형</a>
+			<br><br>
+			<a class="neck" href="1_cmgr.html">컴퓨터그래픽스1</a>
+		</div>
+
+
+	</div>  <!-- #burger의 끝맺음 -->
+		
+</div>  <!-- #nav의 끝맺음 -->
+
+
+
+
+
+
+
+
+<div id='remote'> <!-- 왼쪽에 나오는 리모콘. 모바일 페이지에서는 숨겨집니다. -->
+	<a><div id='quitMenu'><img src='images/x_white_24dp.svg'></div></a>
+    <div class='rLay'>
+		<a href='dxdaward.html'><div id='r1Button' class='rButton'><img src='images/star_rate_black_24dp.svg' class="icon"></div></a>
+		<p id="r1Text" class='rText'>DxDesign Award</p>
+	</div>
+
+    <div class='rLay'>
+	    <a><div id='r2Button' class='rButton'><img src='images/3_black_24dp.svg'></div></a>
+		<div id="s3" class='subjectPanel'>
+			<ul class='menu'><p class='grad'>3학년</p>
+				<li><a href='3_info.html' class="menuText">인포메이션디자인</a></li>  <!-- 과목명이랑 링크(html) 수정 바람. 그리고 과목 순서는 위에 있는 #burger에 있는 순서랑 똑같아야 함. -->
+				<li><a href='3_brnd.html' class="menuText">브랜딩과뉴미디어</a></li>
+				<li><a href='3_intr.html' class="menuText">인터랙션디자인</a></li>
+				<li><a href='3_mgrp.html' class="menuText">모션그래픽</a></li>
+				<li><a href='3_entr.html' class="menuText">엔터테인먼트디자인2</a></li>
+			</ul>
+		</div>
+	</div>
+
+    <div class='rLay'>
+    	<a><div id='r3Button' class='rButton'><img src='images/2_black_24dp.svg'></div></a>
+		<div id="s2" class='subjectPanel'>
+			<ul class='menu'><p class='grad'>2학년</p>
+				<li><a href='2_info.html' class="menuText">인포메이션그래픽스</a></li>
+				<li><a href='2_3dcg.html' class="menuText">3D컴퓨터그래픽스1</a></li>
+				<li><a href='2_webd.html' class="menuText">웹디자인</a></li>
+				<li><a href='2_anim.html' class="menuText">디지털애니메이션</a></li>
+				<li><a href='2_cont.html' class="menuText">디지털콘텐츠디자인1</a></li>
+			</ul>
+		</div>
+	</div>
+
+    <div class='rLay'>
+		<a><div id='r4Button' class='rButton'><img src='images/1_black_24dp.svg'></div></a>
+		<div id="s1" class='subjectPanel'>
+			<ul class='menu'><p class='grad'>1학년</p>
+				<li><a href='1_basc.html' class="menuText">기초디지털표현</a></li>
+				<li><a href='1_typo.html' class="menuText">디지털타입페이스</a></li>
+				<li><a href='1_gest.html' class="menuText">디지털조형</a></li>
+				<li><a href='1_cmgr.html' class="menuText">컴퓨터그래픽스1</a></li>
+			</ul>
+		</div>	
+	</div>
+
+    <div class='rLay'>
+		<a href='about.html'><div id='r5Button' class='rButton'><img src='images/q_black_24dp.svg'></div></a>
+		<p id="r5Text" class='rText'>About Showcase</p>
+	</div>
+
+    <div class='rLay'>
+		<div class='rEmptyButton'></div>
+	</div>
+
+    <div class='rLay'>
+		<a href='http://dxdesign.kr' target='_blank'><div id='r6Button' class='rButton'><img src='images/dxd_black_24dp.svg'></div></a>
+		<p id="r6Text" class='rText'>DxD ⤴</p>
+	</div>
+
+    <div class='rLay'>
+		<a href='https://www.facebook.com/dxdesign.cu.ac.kr/' target='_blank'><div id='r7Button' class='rButton'><img src='images/facebook_black_24dp.svg'></div></a>
+		<p id="r7Text" class='rText'>Facebook ⤴</p>
+	</div>
+
+	<div class='rLay'>
+		<a href='https://www.instagram.com/dcudxd/' target='_blank'><div id='r8Button' class='rButton'><img src='images/instagram_black_24dp.svg'></div></a>
+		<p id="r8Text" class='rText'>Instagram ⤴</p>
+	</div>
+
+</div>  <!-- #remote의 끝맺음 -->
+
+
+
+
+
+
+
+
+
+<div id="container"> <!-- 작품이 여기에 놓임. -->
+
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">판다</p> <!-- 작품명 -->
+			<p class="name">정윤하</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/1-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">판다</p> <!-- 작품명 -->
+			<p class="name">정윤하</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/1-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">나비</p> <!-- 작품명 -->
+			<p class="name">이정민</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/2-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">부엉이</p> <!-- 작품명 -->
+			<p class="name">이정민</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/2-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">패턴</p> <!-- 작품명 -->
+			<p class="name">김지민</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/3-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">패턴</p> <!-- 작품명 -->
+			<p class="name">김지민</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/3-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">플라밍고</p> <!-- 작품명 -->
+			<p class="name">오유진</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/4-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">플라밍고</p> <!-- 작품명 -->
+			<p class="name">오유진</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/4-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">다람쥐</p> <!-- 작품명 -->
+			<p class="name">이유나</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/5-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">전통문양</p> <!-- 작품명 -->
+			<p class="name">이유나</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/5-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">사막여우와 북극여우</p> <!-- 작품명 -->
+			<p class="name">정찬희</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/6-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">용</p> <!-- 작품명 -->
+			<p class="name">정찬희</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/6-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">늑대</p> <!-- 작품명 -->
+			<p class="name">지예훈</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/7-1.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">현명한 왕</p> <!-- 작품명 -->
+			<p class="name">지예훈</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/7-2.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">고양이</p> <!-- 작품명 -->
+			<p class="name">김수아</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/8.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">식물</p> <!-- 작품명 -->
+			<p class="name">고경민</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/9.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">범고래</p> <!-- 작품명 -->
+			<p class="name">서보은</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/10.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">꽃</p> <!-- 작품명 -->
+			<p class="name">신민석</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/11.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+
+	<div class="sec"> <!-- 이게 하나의 작품 패널임. 복붙해서 쳐넣는데 우수작 노력작을 맨 앞으로 두길 권항함 -->
+		<div class="title">
+			<p class="work">패턴</p> <!-- 작품명 -->
+			<p class="name">권현우</p> <!-- 디자이너 성함. 여러명일 경우 콤마랑 띄어쓰기 한 번-->
+		</div>
+		<img id="pic1" class="pic" src="1/1_basc/12.jpg"> <!-- 작품 썸네일 -->
+		</a>
+	</div>
+
+</div>  <!-- #container의 끝맺음 -->
+
+
+
+
+
+
+
+
+
+
+
+	<div id="footers"> <!-- 맨 밑에 나오는거. -->
+			<div id="footers_image"><img id="footer_image" src="images/dxd_logo_w.png"></div>
+			<p id="footer_text">대구가톨릭대학교 디지털디자인과<br>
+			38430 경상북도 경산시 하양읍 하양로 13-13 성카타리나관(D15)<br>
+			053-850-3920</p>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<script src="jquery-3.5.1.js"></script> <!-- 제이쿼리 엔진 파일 -->
+<script src="jquery.easing.min.js"></script> <!-- 제이쿼리 가속도 -->
+<script src="subject.js"></script> <!-- 이 페이지를 작동시키는 파일 -->
+
+
+
+</body>
+    
+</html>
+
