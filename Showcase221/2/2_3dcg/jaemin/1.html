@@ -201,6 +201,7 @@ body {
 .section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
 .section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-900%);}
 .section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1000%);}
+.section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1100%);}
 
 		 
 @media screen and (max-width: 720px) {
@@ -208,12 +209,15 @@ body {
     width: 100%;
 }
 .section .slidelist .left {
-    left: -30px;
-    background: url(../icon/left-arrow.png) center center / 20% no-repeat;
+    left: 0px;
+    background: url(../icon/left-arrow.png) center center / 40% no-repeat;
 }
 .section .slidelist .right {
-    right: -30px;
-    background: url(../icon/right-arrow.png) center center / 20% no-repeat;
+    right: 0px;
+    background: url(../icon/right-arrow.png) center center / 40% no-repeat;
+}
+.section .slidelist label {
+    padding: 30px;
 }
 
 body {
@@ -365,12 +369,13 @@ body {
             <input type="radio" name="slide" id="slide09">
             <input type="radio" name="slide" id="slide10">
             <input type="radio" name="slide" id="slide11">
+            <input type="radio" name="slide" id="slide12">
 
             <div class="slidewrap">
                 <ul class="slidelist">
                     <li>
                         <a>
-                            <label for="slide11" class="left"></label>
+                            <label for="slide12" class="left"></label>
                             <img src="./cube_jaemin_1.jpg">
                             <label for="slide02" class="right"></label>
                         </a>
@@ -406,41 +411,48 @@ body {
                     <li>
                         <a>
                             <label for="slide05" class="left"></label>
-                            <img src="./Lowpoly Car_jaemin_2.jpg">
+                            <img src="./bulb_jaemin_1.jpg">
                             <label for="slide07" class="right"></label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <label for="slide06" class="left"></label>
-                            <img src="./Lowpoly Car_jaemin_1.jpg">
+                            <img src="./Lowpoly Car_jaemin_2.jpg">
                             <label for="slide08" class="right"></label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <label for="slide07" class="left"></label>
-                            <img src="./lowpoly house_jaemin_1.jpg">
+                            <img src="./Lowpoly Car_jaemin_1.jpg">
                             <label for="slide09" class="right"></label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <label for="slide08" class="left"></label>
-                            <img src="./lowpoly house_jaemin_2.jpg">
+                            <img src="./lowpoly house_jaemin_1.jpg">
                             <label for="slide10" class="right"></label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <label for="slide09" class="left"></label>
-                            <img src="./stand_jaemin_3.jpg">
+                            <img src="./lowpoly house_jaemin_2.jpg">
                             <label for="slide11" class="right"></label>
                         </a>
                     </li>
                     <li>
                         <a>
                             <label for="slide10" class="left"></label>
+                            <img src="./stand_jaemin_3.jpg">
+                            <label for="slide12" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide11" class="left"></label>
                             <img src="./stand_jaemin_4.jpg">
                             <label for="slide01" class="right"></label>
                         </a>
