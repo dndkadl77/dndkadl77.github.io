@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="style.css">
+    <title>.</title>  <!-- 작품명 쓰셈 -->
+
+
+
+
+    
+         <style> @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+			 
+
+			 
+body {
+    background-color: #475258;;
+	/*height: 2000px;*/
+    -ms-overflow-style: none; 
+    padding: 0;
+    margin: 0;
+   } 
+   
+   
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
+
+
+#exit {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top:80px;
+    left:80px;
+    opacity: 55%;
+    transform: translate(-50%, -50%);
+}
+
+#exitNoti {
+    position: fixed;
+    height: 40px;
+    width: 80px;
+    top:51px;
+    opacity: 0%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    overflow: hidden;
+    -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+}
+			 
+			 
+			 
+			 
+
+#container {
+    position:relative;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	top: 60px;
+
+}
+
+
+
+
+
+
+#footers {
+    position: relative;
+    width: 100%;
+    height: 200px;
+	top: 200px;
+	display: flex;
+	flex-direction: column;
+}
+	
+			
+#footers_image {
+	position: relative;
+	transform: translate(-50%, 0%);
+	left: 50%;
+	height: 40px;
+
+}
+#footer_image {
+	position: relative;
+	transform: translate(-50%, 0%);
+	left: 50%;
+	height: 30px;
+
+}			
+			
+#footer_text {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+	position: relative;
+}
+
+		
+.panel {
+	overflow: hidden;
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	opacity: 0%;
+    border-radius: 40px;
+	}
+
+
+#link{
+    background-color: #050C25;
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#link:hover{
+    text-decoration: underline;
+}
+
+.section {
+    position: relative;
+    width: 80%;
+}
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    padding: 0;
+    margin-top: 60px;
+}
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .6s;
+}
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section .slidelist > li > a img {
+    width: 100%;
+    border-radius: 40px;
+}
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform:  translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.section .slidelist .left {
+    left: 5px;
+    background: url(../icon/left-arrow.png) center center / 50% no-repeat;
+}
+.section .slidelist .right {
+    right: 5px;
+    background: url(../icon/right-arrow.png) center center / 50% no-repeat;
+}
+
+.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+.section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-500%);}
+.section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-600%);}
+.section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-700%);}
+.section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-800%);}
+.section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-900%);}
+.section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-1000%);}
+
+		 
+@media screen and (max-width: 720px) {
+.section {
+    width: 100%;
+}
+.section .slidelist .left {
+    left: -30px;
+    background: url(../icon/left-arrow.png) center center / 20% no-repeat;
+}
+.section .slidelist .right {
+    right: -30px;
+    background: url(../icon/right-arrow.png) center center / 20% no-repeat;
+}
+
+body {
+	/* height: 2000px; */
+    -ms-overflow-style: none; 
+   } 
+   
+   
+::-webkit-scrollbar { 
+    display: none; 
+    }
+
+
+
+#exit {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    top:80px;
+    left:120%;
+    opacity: 0%;
+    transform: translate(-50%, -50%);
+}
+
+#exitNoti {
+    position: fixed;
+    height: 40px;
+    width: 80px;
+    top:51px;
+    opacity: 0%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fafbfc;
+    overflow: hidden;
+    -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+}
+			 
+			 
+			 
+			 
+
+#container {
+    position:relative;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+
+
+
+
+
+
+#log {
+	position:fixed;
+	top: 100px;
+	left: 100px;
+	width: 200px;
+	height: 100px;
+	background-color:#512da8;
+	color: #fff;
+    font-size: 36px;
+	text-align: center;
+	line-height: 100px;
+}
+
+
+
+#footers {
+    position: relative;
+    width: 100%;
+    height: auto;
+	display: flex;
+	flex-direction: column;
+}
+	
+			
+#footers_image {
+	position: relative;
+	transform: translate(-50%, 0%);
+	left: 50%;
+	width: 150px;
+
+}
+#footer_image {
+	position: relative;
+	transform: translate(-50%, 0%);
+	width: 100%;
+	height: auto;
+
+}			
+			
+#footer_text {
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.8rem;
+	position: relative;
+}
+
+		
+.panel {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	opacity: 0%;
+	}
+
+
+			 
+
+#link{
+    font-size: 1rem;
+    width: 100%;
+    height: 100px;
+}
+}
+			 
+</style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div id="container">
+        <!-- <img src="./stand_jaemin_4.jpg" alt="" class="panel"> -->
+
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <input type="radio" name="slide" id="slide04">
+            <input type="radio" name="slide" id="slide05">
+            <input type="radio" name="slide" id="slide06">
+            <input type="radio" name="slide" id="slide07">
+            <input type="radio" name="slide" id="slide08">
+            <input type="radio" name="slide" id="slide09">
+
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a>
+                            <label for="slide09" class="left"></label>
+                            <img src="./3D_Cube1.jpg">
+                            <label for="slide02" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide01" class="left"></label>
+                            <img src="./3D_Cube2.jpg">
+                            <label for="slide03" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide02" class="left"></label>
+                            <img src="./3D_bulb.jpg">
+                            <label for="slide04" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide03" class="left"></label>
+                            <img src="./3D_car1.jpg">
+                            <label for="slide05" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide04" class="left"></label>
+                            <img src="./3D_car2.jpg">
+                            <label for="slide06" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide05" class="left"></label>
+                            <img src="./3D_House1.jpg">
+                            <label for="slide07" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide06" class="left"></label>
+                            <img src="./3D_House2.jpg">
+                            <label for="slide08" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide07" class="left"></label>
+                            <img src="./3D_stand light1.jpg">
+                            <label for="slide09" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide08" class="left"></label>
+                            <img src="./3D_stand light2.jpg">
+                            <label for="slide01" class="right"></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+	<div id="footers">
+			<div id="footers_image"><img id="footer_image" src="../../../images/dxd_logo_w.png"></div>
+			<p id="footer_text">대구가톨릭대학교 디지털디자인과<br>
+			38430 경상북도 경산시 하양읍 하양로 13-13 성카타리나관(D15)<br>
+			053-850-3920</p>
+	</div>
+
+
+</div>
+
+
+<!--<div id="log">0</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p id="exitNoti">닫기</p>
+<a id="exit"><img src="../../../images/Xw.svg"></a>
+
+
+
+
+<script src="../../../jquery-3.5.1.js"></script>
+<script src="../../../jquery.easing.min.js"></script>
+
+
+<script>
+
+
+$(document).ready(function(){
+    $(document).ready(function(){
+        $('#exit').delay(1000).animate({'opacity': '100%'}, 1000);
+        $('.panel').delay(100).animate({'opacity': '100%'}, 1000, 'easeOutBack');
+    });
+
+});
+
+
+$(document).ready(function(){
+
+    $("#exit").on('mouseover', function(){
+        $(this).stop().animate({'opacity':'100%'}, 100, 'easeOutExpo');
+        $('#exitNoti').stop().animate({'left':'110px', 'opacity':'100%'}, 100, 'easeOutExpo');
+    });
+	
+    $("#exit").on('mouseleave', function(){
+        $(this).stop().animate({'opacity':'55%'}, 100, 'easeOutExpo');
+        $('#exitNoti').stop().animate({'left':'0px', 'opacity':'0%'}, 100, 'easeOutExpo');
+    });
+	
+
+    $("#exit").on('click', function(){
+        window.open('about:blank', '_self').close();	
+});
+
+
+
+
+       
+    });
+
+    function log(str){
+        $('#log').text(str);
+    }
+
+
+</script>
+
+
+
+</body>
+    
+</html>
+
