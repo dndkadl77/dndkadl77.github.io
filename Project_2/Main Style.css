@@ -69,11 +69,11 @@ body {
 .box1 {
     position: absolute;
     background-color: #9080F2;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 45%;
-    height: 60%;
+    width: 950px;
+    height: 600px;
 }
 .text_box1 {
     position: absolute;
@@ -84,30 +84,30 @@ body {
 }
 .text_box1 > h1 {
     position: relative;
-    font-size: 8.5vw;
+    font-size: 170px;
     font-weight: 900;
 }
 .text_box1 > h2 {
     position: relative;
-    font-size: 6vw;
+    font-size: 120px;
     left: 20%;
     font-weight: 300;
 }
 .text_box1 > h3 {
     position: relative;
     left: 5%;
-    font-size: 4vw;
+    font-size: 80px;
     font-weight: 700;
 }
 .text_box1 > h4 {
     position: relative;
-    font-size: 7vw;
+    font-size: 130px;
     font-weight: 100;
     left: 16%;
 }
 .text_box1 > h5 {
     position: relative;
-    font-size: 6vw;
+    font-size: 120px;
     font-weight: 400;
 }
 
@@ -138,8 +138,9 @@ body {
     }
 
     .box1 {
-        width: 90%;
-        height: 25%;
+        top: 49%;
+        width: 370px;
+        height: 230px;
     }
     .text_box1 {
         left: 5%;

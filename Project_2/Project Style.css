@@ -55,23 +55,20 @@ body {overflow-x: hidden;}
     transition: 0.2s;
     color: #614BF2;
 }
+header {
+    height: 100px;
+    z-index: -50;
+}
 /* page3 */
 a, a:link, a:hover, a:visited
 {
     color: #000000;
     text-decoration: none;
 }
-header {
-    position: relative;
-    width: 95%;
-    height: 192px;
-    margin: 0 auto;  /* position이 relative인 요소를 가운데 배치하는 방법 */
-    color: rgba(0,0,0,0);
-    background-color: #ffffff;
-}
 main {
     position: relative;
     width: 95%;
+    height: 100%;
     margin: 0 auto;
     background-color: #ffffff;
 }
@@ -82,18 +79,6 @@ footer {
     height: 48px;
     color: #000000;
     background-color: #ffffff;
-}
-#logo {
-    position: relative;
-    width: 360px;
-    margin: 0 auto;
-    padding-top: 32px;
-    text-align: center;
-    font-family: 'Amarante', cursive;
-    font-size: 4.0em;
-    font-weight: 700;
-    color: rgba(0,0,0,0);
-    /* background-color: #ffffff; */
 }
 /* main 영역 스타일 */
 #item-grid {
@@ -116,6 +101,8 @@ footer {
     left: 8px;
     overflow: hidden;
     /* background-color: blue; */
+    border-radius: 30px;
+    border: solid 1px #aaa;
 }
 
 .item > img {
@@ -186,5 +173,11 @@ footer {
         font-size: 3vw;
         left: 20%;
         margin-right: 3vw;
+    }
+    .text {
+        font-size: 15px;
+    }
+    header{
+        height: 70px;
     }
 }
