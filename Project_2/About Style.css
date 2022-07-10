@@ -213,7 +213,7 @@ body {
     }
     .textbox_2 {
         width: 50%;
-        height: 80%;
+        height: 60%;
         position: relative;
         left: 25%;
     }
@@ -238,7 +238,7 @@ body {
     }
     .education {
         width: 100%;
-        height: 20%;
+        height: 10%;
         position: absolute;
         left: 0;
         top: 75%;
