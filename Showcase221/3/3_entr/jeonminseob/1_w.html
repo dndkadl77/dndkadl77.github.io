@@ -118,6 +118,10 @@ body {
 	width: 60%;
 	margin: 0 auto;
 	opacity: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 	}
 
 
@@ -127,7 +131,6 @@ body {
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
     color: #ffffff;
     font-weight: 400;
@@ -138,6 +141,36 @@ body {
 
 #link:hover{
     text-decoration: underline;
+}
+.dl_cta {
+    position: relative;
+    width: 180px;
+    height: 60px;
+    border-radius: 27px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 100%;
+    transform: translate(0%, 0%);
+    margin: 27px;
+    background: linear-gradient(145deg, #010203, #000000);
+}
+.dl_text {
+    color: #ffffff;
+    text-decoration: none;
+}
+.dl_noti{
+    margin-top: 00px;
+    height: 0px;
+    overflow: hidden;
+}
+.dl_text:hover{
+    color: #ffde58;
 }
 
 
@@ -272,6 +305,20 @@ body {
 iframe{
     height: 432px;
 }
+.dl_cta {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0%;
+}
+.dl_noti{
+    height: 100px;
+    font-weight: 100;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+}
 }
 			 
 </style>
@@ -290,6 +337,23 @@ iframe{
 
 	<img class="panel" src="jeonminseob_m.jpg" style="border-radius: 30px;">
     <iframe class="panel" src="https://player.vimeo.com/video/725969761?uted=1&autoplay=1&loop=1&h=042fc2b9b7&badge=0&autopause=0&player_id=0&app_id=58479" width="1600" height="900" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="앤터_전민섭_Vampire Human"></iframe> 
+    <div class="panel" style="opacity: 1;">
+        <div class="dl_cta">
+            <a href="https://drive.google.com/file/d/1qHEVhCjyc76UG80sY9VIa-uw86zen3Q6/view?usp=sharing" class="dl_text" target="_blank">
+                "Windows"<br>
+                다운로드
+            </a>
+        </div>
+        <div class="dl_cta">
+            <a href="https://drive.google.com/file/d/1FHSXxgn5Iw2Wo7rwaCRiByZq9fc6-T9I/view?usp=sharing" class="dl_text" target="_blank">
+                "Mac"<br>
+                다운로드
+            </a>
+        </div>
+        <div class="dl_noti">PC 웹사이트에서 다운로드를 받을 수 있습니다.</div>
+    </div>
+
+
 
 
 	<div id="footers">
