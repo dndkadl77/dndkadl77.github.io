@@ -4,46 +4,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>9월 20일 실습</title>
+    <link rel="stylesheet" href="/Reset.css">
     <style>
         /* CSS 코드 */
         #button {
-            display: block;
-            position: absolute;
+            display: flex;
+            position: relative;
             width: 200px;
             height: 50px;
             top: 100px;
             left: 100px;
-            background-color:blueviolet;
-        }
-        #button:hover {
-            scale: 1.1;
-            transition: 0.3s;
-            border-radius: 25px;
-            background-color: blue;
+            background-color:#aaa;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
         }
         #target {
-            display: block;
             position: absolute;
             width: 200px;
-            height: 50px;
-            top: 200px;
+            height: 300px;
+            top: 150px;
             left: 100px;
-            background-color:aqua;
+            background-color:#ccc;
+        }
+        ul > li{
+            margin-top: 10px;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            font-size: 24px;
         }
     </style>
 </head>
 
 <body>
     <div id="button"></div>
-    <div id="target"></div>
+    <div id="target">
+        <ul>
+            <li>나재민</li>
+            <li>이주석</li>
+            <li>황보철</li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="/js/jquery-3.6.1.js"></script> <!-- JS 라이브러리 또는 외부 스크립트 연결 -->
     <script>
-        document.getElementById('button').onclick = function(){
-            document.getElementById('target').style.width = '400px';
-            document.getElementById('target').style.height = '400px';
-            document.getElementById('target').style.backgroundColor = '#eee'
-            document.getElementById('target').style.transition = '0.3s'
-            document.getElementById('target').style.borderRadius = '27px'
-        };
+        $('#button').hover(
+            function(){
+                $('#target').css('display', 'block');
+            },
+            function(){
+                $('#target').css('display', 'none');
+            }
+        );
     </script>
 </body>
     
