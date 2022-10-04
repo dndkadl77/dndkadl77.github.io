@@ -3,61 +3,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>9월 27일 과제</title>
+    <title>고급 디지털표현</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/Reset.css">
-    <style>
-        /* CSS 코드 */
-        #button {
-            display: flex;
-            position: relative;
-            width: 200px;
-            height: 50px;
-            top: 100px;
-            left: 100px;
-            background-color:#aaa;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        #target {
-            position: absolute;
-            width: 200px;
-            height: 300px;
-            top: 150px;
-            left: 100px;
-            background-color:#ccc;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-        }
-        ul > li{
-            margin-top: 10px;
-            width: 200px;
-            height: 100px;
-            text-align: center;
-            font-size: 24px;
-        }
-    </style>
+    <link rel="stylesheet" href="./1004b.css">
 </head>
 
 <body>
-    <div id="button"></div>
-    <div id="target">
-        <ul>
-            <li>나재민</li>
-            <li>이주석</li>
-            <li>황보철</li>
-        </ul>
+    <div id="slideshow-frame">
+        <div id="left-box">
+            <span id="btn-left" class="material-icons">navigate_before</span>
+        </div>
+        <div id="right-box">
+            <span id="btn-right" class="material-icons">navigate_next</span>
+        </div>
+        <div id="slides">
+            <img src="images/Sky_1.jpg">
+            <img src="images/Sky_2.jpg">
+            <img src="images/Retro.jpg">
+        </div>
     </div>
-    <a href="./1004.html" target="_blank">1004</a>
-    <script type="text/javascript" src="/js/jquery-3.6.1.js"></script> <!-- JS 라이브러리 또는 외부 스크립트 연결 -->
+
+    <!-- jQuery 라이브러리 연결 -->
+    <script type="text/javascript" src="../js/jquery-3.6.1.js"></script>
+
     <script>
-        $('#button').hover(
-            function(){
-                $('#target').css('display', 'block');
-            },
-            function(){
-                $('#target').css('display', 'none');
+        var x=0;
+        var w=1008; // 이미지의 너비
+        var n=3; // 이미지의 수
+
+        $('#btn-right').off('click').on('click', function(){
+            console.log(x);
+            if(x>=2) {
+                $('#slides').animate({'left': '+='+w*(n-1)}, 900);
+                x = 0;
             }
-        );
+            else {
+                $('#slides').animate({'left': '-='+w}, 900);
+                x = x+1;
+            }
+        });
+        
+        $('#btn-left').off('click').on('click', function(){
+            console.log(x);
+            if(x<=0) {
+                $('#slides').animate({'left': '-='+w*(n-1)}, 900);
+                x = (n-1);
+            }
+            else {
+                $('#slides').animate({'left': '+='+w}, 900);
+                x = x-1;
+            }
+        });
     </script>
 </body>
     

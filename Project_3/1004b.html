@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery 슬라이드쇼(Carousel)</title>
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 외부 CSS 연결 -->
+    <link href="1004b.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="slideshow-frame">
+        <div id="left-box">
+            <span id="btn-left" class="material-icons">navigate_before</span>
+        </div>
+        <div id="right-box">
+            <span id="btn-right" class="material-icons">navigate_next</span>
+        </div>
+        <div id="slides">
+            <img src="images/Sky_1.jpg">
+            <img src="images/Sky_2.jpg">
+            <img src="images/Retro.jpg">
+        </div>
+    </div>
+
+    <!-- jQuery 라이브러리 연결 -->
+    <script type="text/javascript" src="../js/jquery-3.6.1.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> CDN 방식으로 연결하는 경우 -->
+
+    <script>
+        var x=0;
+        var w=1008; // 이미지의 너비
+        var n=3; // 이미지의 수
+
+        $('#btn-right').off('click').on('click', function(){
+            console.log(x);
+            if(x>=2) {
+                $('#slides').animate({'left': '+='+w*(n-1)}, 500);
+                x = 0;
+            }
+            else {
+                $('#slides').animate({'left': '-='+w}, 300);
+                x = x+1;
+            }
+        });
+        
+        $('#btn-left').off('click').on('click', function(){
+            console.log(x);
+            if(x<=0) {
+                $('#slides').animate({'left': '-='+w*(n-1)}, 500);
+                x = (n-1);
+            }
+            else {
+                $('#slides').animate({'left': '+='+w}, 300);
+                x = x-1;
+            }
+        });
+    </script>
+</body>
+    
+</html>
