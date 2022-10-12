@@ -1,0 +1,8 @@
+#slideshow-frame {
+    position: relative;
+    width: 960px;
+    height: 540px;
+    top: 100px;
+    left: 100px;
+    overflow: hidden;
+}

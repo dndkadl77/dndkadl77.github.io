@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>스크롤 이벤트</title>
+    <!-- 외부 CSS 연결 -->
+    <link href="1004a.css" rel="stylesheet">
+    <style>
+        body {
+            height: 2000px;
+        }
+        #box1 {
+            position: fixed;
+            top: 50px;
+            left: 50px;
+            width: 200px;
+            height: 100px;
+            color: #fff;
+            background-color: #000;
+        }
+        #target1 {
+            position: fixed;
+            top: 200px;
+            right: -2000px;
+            width: 400px;
+
+        }
+        #target2 {
+            position: fixed;
+            top: 500px;
+            left: -2000px;
+            width: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+    </div>
+    <img id="target1" src="images/image01.png">
+    <img id="target2" src="images/image02.png">
+
+    <!-- jQuery 라이브러리 연결 -->
+    <script type="text/javascript" src="../js/jquery-3.6.1.js"></script>
+
+    <script>
+        $(window).on('scroll', function(){
+            // 브라우저의 스크롤 상단값(scrollTop)을 변수 yPos에 저장
+            var yPos = $(window).scrollTop();
+
+            // id가 box1인 요소의 텍스트에 변수 yPos 값 입력
+            $('#box1').text(yPos);
+            
+            if(yPos >= 300) {
+                $('#target1').stop().animate({'right': '500px'}, 1000);
+            } else {
+                $('#target1').stop().animate({'right': '-2000px'}, 1000);
+            }
+            if(yPos >= 500) {
+                $('#target2').stop().animate({'left': '500px'}, 1000);
+            } else {
+                $('#target2').stop().animate({'left': '-2000px'}, 1000);
+            }
+        });
+    </script>
+</body>
+    
+</html>
