@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <title>Isometric Cards</title>
+        <link rel="stylesheet" type="text/css" href="Main.css">
+    </head>
+    <style>
+        .container .poster-card
+        {
+            position: relative;
+            width: 510px;
+            height: 720px;
+            top: -320px;
+            left: -80px;
+            background: #fff;
+            transition:0.5s;
+            z-index: 999;
+        }
+        .container .poster-card:before
+        {
+            content:'';
+            position:absolute;
+            top:-15px;
+            left:0;
+            width:100%;
+            height:15px;
+            background:#d9d9d9;
+            transform-origin: bottom;
+            transform: skewX(45deg);
+            transition: 0.5s;
+        }
+        .container .poster-card:after
+        {
+            content:'';
+            position:absolute;
+            top:-15px;
+            left:-15px;
+            width:15px;
+            height:72%;
+            background:#d9d9d9;
+            transform-origin: left;
+            transform: skewY(45deg);
+            transition: 0.5s;
+            border-bottom:200px solid #d9d9d9
+        }
+        .container .poster-card:hover
+        {
+            transform:translateY(-40px);
+            z-index: 999;
+        }
+
+        .container .poster-card .poster-imgBx    /* 여기가 카드 메인*/
+        {
+            position:relative;
+            width:510px;
+            height:720px;
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+        .container .poster-card .poster-imgBx img
+
+        {
+            max-width: 97%;
+            border-radius: 15px;
+        }
+        .container .poster-card .poster-imgBx h3
+        {
+            position: relative;
+            /* color:#fff; */
+            margin-top:10px;
+            font-size: 80px;
+        }
+
+        .container > a {text-decoration: none;}
+
+        /* .container .card .content
+        {
+            position: relative;
+            width:100%;
+            height:200px;
+            padding:15px;
+            color:rgb(19, 19, 19);
+            text-align: center;
+            background: #fff;
+        } */
+        .container .poster-card .poster-content:before
+        {
+            content:'';
+            position: absolute;
+            left:0;
+            bottom:0;
+            width:100%;
+            height:400px;
+            background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3));
+            transform-origin: bottom;
+            transform: skewX(45deg);
+            transition:0.5s;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .container .poster-card:hover .poster-content:before
+        {
+            transform:translateY(40px)skewX(45deg);
+            filter: blur(5px);
+            opacity: 0.5;
+        }
+    </style>
+    <body>
+        
+        <div class="container">
+
+            <a class="poster-card" href="#">
+                <div class="poster-imgBx">
+                    <img src="/Showcase221/images/221poster_2.png" alt="">
+                </div>
+                <div class="poster-content">
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="imgBx">
+                    
+                    <h3>1</h3>
+                </div>
+                <div class="content">
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="imgBx">
+                    
+                    <h3>2</h3>
+                </div>
+                <div class="content">
+                </div>
+            </a>
+
+            <a class="card" href="#">
+                <div class="imgBx">
+                    
+                    <h3>3</h3>
+                </div>
+                <div class="content">
+                </div>
+            </a>
+
+        </div>
+      
+        <div class="line">
+        </div>
+             <script type="text/javascript" src="vanilla-tilt.js"></script>
+             <script>
+                VanillaTilt.init(document.querySelectorAll(".imgBx"),{
+                max: 0,
+                speed: 400,
+                glare: true,
+                "max-glare":1,
+        
+                });
+                </script>
+    </body>
+</html>
