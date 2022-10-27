@@ -16,7 +16,6 @@ body{
     min-height:100vh;
     color:rgba(255, 255, 255, 0.05);
     overflow:hidden;
-
 }
 .container
 {
@@ -31,7 +30,7 @@ body{
     transform:skewY(-13deg);
     animation-name: n1;
     animation-duration: 2s;
-    
+    z-index: 998;
 }
 @keyframes n1{
     from{
@@ -319,7 +318,6 @@ body{
     }
     to{
         margin-left:0;
-
     }
 }
 @media (max-width:800px){
