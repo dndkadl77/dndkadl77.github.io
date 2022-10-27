@@ -74,7 +74,7 @@ body{
     transform-origin: left;
     transform: skewY(45deg);
     transition: 0.5s;
-    border-bottom:200px solid #d9d9d9
+    border-bottom:200px solid #d9d9d9;
 }
 .container .card:hover
 {
@@ -90,6 +90,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 990;
 }
 .container .card .imgBx img
 

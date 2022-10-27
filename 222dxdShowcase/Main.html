@@ -109,19 +109,28 @@
             opacity: 0.5;
         }
 
-/* ------------------------------------------------------ */
-        /* .container_back .poster-card_2
+        #title {
+            position: absolute;
+            color: #000;
+            transform: translate(-50%, -50%);
+            width: 720px;
+            left: 64%;
+            top: -25%;
+            font-size: 100px;
+        }
+        /* ---------------------------------------------------------------- */
+        .container .poster-card_2
         {
-            position: relative;
+            position: absolute;
             width: 510px;
             height: 720px;
-            top: -320px;
-            left: -80px;
+            top: -400px;
+            left: -78px;
             background: #fff;
             transition:0.5s;
-            z-index: 999;
+            z-index: 888;
         }
-        .container_back .poster-card_2:before
+        .container .poster-card_2:before
         {
             content:'';
             position:absolute;
@@ -134,7 +143,7 @@
             transform: skewX(45deg);
             transition: 0.5s;
         }
-        .container_back .poster-card_2:after
+        .container .poster-card_2:after
         {
             content:'';
             position:absolute;
@@ -148,13 +157,13 @@
             transition: 0.5s;
             border-bottom:200px solid #d9d9d9
         }
-        .container_back .poster-card_2:hover
+        .container .poster-card_2:hover
         {
             transform:translateY(-40px);
-            z-index: 999;
+            z-index: 888;
         }
 
-        .container_back .poster-card_2 .poster-imgBx_2
+        .container .poster-card_2 .poster-imgBx_2    /* 여기가 카드 메인*/
         {
             position:relative;
             width:510px;
@@ -165,22 +174,33 @@
             align-items: center;
             z-index: 999;
         }
-        .container_back .poster-card_2 .poster-imgBx_2 img
+        .container .poster-card_2 .poster-imgBx_2 img
 
         {
             max-width: 97%;
             border-radius: 15px;
         }
-        .container_back .poster-card_2 .poster-imgBx_2 h3
+        .container .poster-card_2 .poster-imgBx_2 h3
         {
             position: relative;
+            /* color:#fff; */
             margin-top:10px;
             font-size: 80px;
         }
 
-        .container_back > a {text-decoration: none;}
+        .container > a {text-decoration: none;}
 
-        .container_back .poster-card_2 .poster-content_2:before
+        /* .container .card .content
+        {
+            position: relative;
+            width:100%;
+            height:200px;
+            padding:15px;
+            color:rgb(19, 19, 19);
+            text-align: center;
+            background: #fff;
+        } */
+        .container .poster-card_2 .poster-content_2:before
         {
             content:'';
             position: absolute;
@@ -195,46 +215,114 @@
             pointer-events: none;
             z-index: -1;
         }
-        .container_back .poster-card_2:hover .poster-content_2:before
+        .container .poster-card_2:hover .poster-content_2:before
         {
             transform:translateY(40px)skewX(45deg);
             filter: blur(5px);
             opacity: 0.5;
         }
-        .container_back
+        /* ------------------------------------------------------------------ */
+
+        .container .aw_card
         {
             position: absolute;
-            width:1400px;
-            height: 500px;
-            top: 350px;
-            left: 250px;
-            display:flex;
-            flex-wrap:wrap;
-            justify-content: space-between;
+            left: 830px;
+            top: 500px;
+            width: 400px;
+            height: 100px;
+            background: #eee;
             transition:0.5s;
-            transform:skewY(-13deg);
-            animation-name: n2;
-            animation-duration: 2s;
-        } */
-        /* @keyframes n2{
-            from{
-                margin-bottom:500px;
-            }
-            to{
-                margin-bottom:0;
-            }
-        } */
-
-
-        #title {
-            position: absolute;
-            color: #000;
-            transform: translate(-50%, -50%);
-            width: 720px;
-            left: 64%;
-            top: -25%;
-            font-size: 100px;
         }
+        .container .aw_card:before
+        {
+            content:'';
+            position:absolute;
+            top:-15px;
+            left:0;
+            width:100%;
+            height:15px;
+            background:#d9d9d9;
+            transform-origin: bottom;
+            transform: skewX(45deg);
+            transition: 0.5s;
+        }
+        .container .aw_card:after
+        {
+            content:'';
+            position:absolute;
+            top:-15px;
+            left:-15px;
+            width:15px;
+            /* height:1%; */
+            background:#d9d9d9;
+            transform-origin: left;
+            transform: skewY(45deg);
+            transition: 0.5s;
+            border-bottom:100px solid #d9d9d9;
+        }
+        .container .aw_card:hover
+        {
+            transform:translateY(-40px);
+        }
+
+        .container .aw_card .aw_imgBx    /* 여기가 카드 메인*/
+        {
+            position:relative;
+            width:400px;
+            height:100px;
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 990;
+        }
+        .container .aw_card .aw_imgBx img
+
+        {
+            max-width: 100%;
+        }
+        .container .aw_card .aw_imgBx h3
+        {
+            position: relative;
+            color:#000;
+            margin-top:10px;
+            font-size: 50px;
+        }
+
+        .container > a {text-decoration: none;}
+
+        /* .container .card .content
+        {
+            position: relative;
+            width:100%;
+            height:200px;
+            padding:15px;
+            color:rgb(19, 19, 19);
+            text-align: center;
+            background: #fff;
+        } */
+        .container .aw_card .aw_content:before
+        {
+            content:'';
+            position: absolute;
+            left:0;
+            bottom:0;
+            width:100%;
+            height:100px;
+            background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3));
+            transform-origin: bottom;
+            transform: skewX(45deg);
+            transition:0.5s;
+            pointer-events: none;
+            z-index: -10;
+        }
+        .container .aw_card:hover .aw_content:before
+        {
+            transform:translateY(40px)skewX(45deg);
+            filter: blur(5px);
+            opacity: 0.5;
+        }
+
     </style>
     <body>
     
@@ -245,6 +333,13 @@
                     <img src="/Showcase221/images/221poster_2.png" alt="">
                 </div>
                 <div class="poster-content">
+                </div>
+            </a>
+            <a class="poster-card_2" href="#">
+                <div class="poster-imgBx_2">
+                    <img src="/Showcase221/images/212poster.jpeg" alt="">
+                </div>
+                <div class="poster-content_2">
                 </div>
             </a>
 
@@ -274,20 +369,18 @@
                 <div class="content">
                 </div>
             </a>
+            <a class="aw_card" href="#">
+                <div class="aw_imgBx">
+                    
+                    <h3>DXD AWARD</h3>
+                </div>
+                <div class="aw_content">
+                </div>
+            </a>
 
         </div>
 
-        <!-- <div class="container_back">
-
-            <a class="poster-card_2" href="http://showcase212.dxdesign.kr/" target="_blank">
-                <div class="poster-imgBx_2">
-                    <img src="/Showcase221/images/212poster.jpeg" alt="">
-                </div>
-                <div class="poster-content_2">
-                </div>
-            </a>
-        </div> -->
-             <script type="text/javascript" src="vanilla-tilt.js"></script>
+             <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
              <script>
                 VanillaTilt.init(document.querySelectorAll(".imgBx"),{
                 max: 0,
