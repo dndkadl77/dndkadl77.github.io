@@ -12,7 +12,7 @@
             width: 510px;
             height: 720px;
             top: -320px;
-            left: -80px;
+            /* left: -80px; */
             background: #fff;
             transition:0.5s;
             z-index: 999;
@@ -109,8 +109,8 @@
             opacity: 0.5;
         }
 
-
-        .container_back .poster-card_2
+/* ------------------------------------------------------ */
+        /* .container_back .poster-card_2
         {
             position: relative;
             width: 510px;
@@ -154,7 +154,7 @@
             z-index: 999;
         }
 
-        .container_back .poster-card_2 .poster-imgBx_2    /* 여기가 카드 메인*/
+        .container_back .poster-card_2 .poster-imgBx_2
         {
             position:relative;
             width:510px;
@@ -174,23 +174,12 @@
         .container_back .poster-card_2 .poster-imgBx_2 h3
         {
             position: relative;
-            /* color:#fff; */
             margin-top:10px;
             font-size: 80px;
         }
 
         .container_back > a {text-decoration: none;}
 
-        /* .container .card .content
-        {
-            position: relative;
-            width:100%;
-            height:200px;
-            padding:15px;
-            color:rgb(19, 19, 19);
-            text-align: center;
-            background: #fff;
-        } */
         .container_back .poster-card_2 .poster-content_2:before
         {
             content:'';
@@ -226,20 +215,31 @@
             transform:skewY(-13deg);
             animation-name: n2;
             animation-duration: 2s;
-        }
-        @keyframes n2{
+        } */
+        /* @keyframes n2{
             from{
                 margin-bottom:500px;
             }
             to{
                 margin-bottom:0;
             }
+        } */
+
+
+        #title {
+            position: absolute;
+            color: #000;
+            transform: translate(-50%, -50%);
+            width: 720px;
+            left: 64%;
+            top: -25%;
+            font-size: 100px;
         }
     </style>
     <body>
     
         <div class="container">
-
+            <h1 id="title"> DxD Showcase222</h1>
             <a class="poster-card" href="#">
                 <div class="poster-imgBx">
                     <img src="/Showcase221/images/221poster_2.png" alt="">
@@ -277,7 +277,7 @@
 
         </div>
 
-        <div class="container_back">
+        <!-- <div class="container_back">
 
             <a class="poster-card_2" href="http://showcase212.dxdesign.kr/" target="_blank">
                 <div class="poster-imgBx_2">
@@ -286,10 +286,7 @@
                 <div class="poster-content_2">
                 </div>
             </a>
-        </div>
-
-        <div class="line">
-        </div>
+        </div> -->
              <script type="text/javascript" src="vanilla-tilt.js"></script>
              <script>
                 VanillaTilt.init(document.querySelectorAll(".imgBx"),{
