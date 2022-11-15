@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    min-height: 100vh;
+    min-height:90vh;
     background:#f1f1f1;
     overflow-x: hidden;
 }
@@ -24,8 +24,6 @@ body{
     letter-spacing: 2px;
     text-align: center;
     transform: rotate(-22deg) skew(25deg);
-    animation-name: n1;
-    animation-duration: 1.5s;
 }
 #text::before{
     content: attr(data-text);
@@ -39,14 +37,5 @@ body{
 }
 #text:hover {
     font-size: 18em;
-    transition: 0.2s;
-}
-@keyframes n1{
-    from{
-        margin-bottom:500px;
-    }
-    to{
-        margin-bottom:0;
-
-    }
+    transition: 1s;
 }
