@@ -115,7 +115,7 @@
             color: #000;
             transform: translate(-50%, -50%);
             width: 720px;
-            left: 64%;
+            left: 65%;
             top: -25%;
             font-size: 100px;
         }
@@ -160,7 +160,7 @@
         }
         .container .poster-card_2:hover
         {
-            transform:translateY(-40px);
+            transform:translateX(-200px);
             z-index: 888;
         }
 
@@ -209,7 +209,7 @@
             bottom:0;
             width:100%;
             height:400px;
-            background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3));
+            /* background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3)); */
             transform-origin: bottom;
             transform: skewX(45deg);
             transition:0.5s;
@@ -218,7 +218,6 @@
         }
         .container .poster-card_2:hover .poster-content_2:before
         {
-            transform:translateY(40px)skewX(45deg);
             filter: blur(5px);
             opacity: 0.5;
         }
@@ -286,7 +285,7 @@
         {
             position: relative;
             color:#000;
-            margin-top:10px;
+            /* margin-top:px; */
             font-size: 50px;
         }
 
@@ -373,7 +372,7 @@
             <a class="aw_card" href="#">
                 <div class="aw_imgBx">
                     
-                    <h3>DXD AWARD</h3>
+                    <h3>DxDesign Award</h3>
                 </div>
                 <div class="aw_content">
                 </div>
@@ -389,6 +388,16 @@
                 glare: true,
                 "max-glare":1,
                 });
+            </script>
+
+            <script type="text/javascript">
+                var text = document.getElementById('title')
+                var shadow = '';
+                for(var i = 0; i<10; i++)
+                {
+                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
+                }
+                text.style.textShadow = shadow;
             </script>
     </body>
 </html>

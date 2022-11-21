@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transform: scale(0.8);
     min-height:90vh;
     background:#f1f1f1;
     overflow-x: hidden;
@@ -19,7 +19,7 @@ body{
     top: -30px;
     color: #fff;
     font-weight: 900;
-    font-size: 15em;
+    font-size: 18em;
     line-height: 0.9em;
     letter-spacing: 2px;
     text-align: center;
@@ -36,6 +36,7 @@ body{
     z-index: -1;
 }
 #text:hover {
-    font-size: 18em;
+    font-size: 20em;
     transition: 1s;
+    color: #666;
 }
