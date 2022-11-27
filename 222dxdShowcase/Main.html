@@ -343,7 +343,7 @@
                 </div>
             </a>
 
-            <a class="card" href="#">
+            <!-- <a class="card" href="#">
                 <div class="imgBx">
                     
                     <h3>1</h3>
@@ -368,7 +368,7 @@
                 </div>
                 <div class="content">
                 </div>
-            </a>
+            </a> -->
             <a class="aw_card" href="#">
                 <div class="aw_imgBx">
                     
@@ -377,6 +377,30 @@
                 <div class="aw_content">
                 </div>
             </a>
+
+            <ul>
+                <h6 id="go">3학년</h6>
+                <li style="--i:5;"><a href="#" style="text-decoration:none ;"><span>디지털디자인2</span></a></li>
+                <li style="--i:4;"><a href="#" style="text-decoration:none ;"><span>디지털콘텐츠디자인2</span></a></li>
+                <li style="--i:3;"><a href="#" style="text-decoration:none ;"><span>피지컬컴퓨팅</span></a></li>
+                <li style="--i:2;"><a href="#" style="text-decoration:none ;"><span>사용자경험디자인</span></a></li>
+                <li style="--i:1;"><a href="#" style="text-decoration:none ;"><span>고급디지털표현</span></a></li>
+            </ul>
+            <ul>
+                <h6 id="go2">2학년</h6>
+                <li style="--i:5;"><a href="#" style="text-decoration:none ;"><span>앤터테인먼트디자인1</span></a></li>
+                <li style="--i:4;"><a href="#" style="text-decoration:none ;"><span>디지털사진</span></a></li>
+                <li style="--i:3;"><a href="#" style="text-decoration:none ;"><span>디지털비디오</span></a></li>
+                <li style="--i:2;"><a href="#" style="text-decoration:none ;"><span>디지털디자인1</span></a></li>
+                <li style="--i:1;"><a href="#" style="text-decoration:none ;"><span>3D컴퓨터그래픽스</span></a></li>
+            </ul>
+            <ul>
+                <h6 id="go3">1학년</h6>
+                <li style="--i:5;"><a href="#" style="text-decoration:none ;"><span>디자인발상과리서치</span></a></li>
+                <li style="--i:4;"><a href="#" style="text-decoration:none ;"><span>스토리텔링과디자인</span></a></li>
+                <li style="--i:3;"><a href="#" style="text-decoration:none ;"><span>타입페이스와뉴미디어</span></a></li>
+                <li style="--i:2;"><a href="#" style="text-decoration:none ;"><span>컴퓨터그래픽스2</span></a></li>
+            </ul>
 
         </div>
 
@@ -394,6 +418,33 @@
                 var text = document.getElementById('title')
                 var shadow = '';
                 for(var i = 0; i<10; i++)
+                {
+                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
+                }
+                text.style.textShadow = shadow;
+            </script>
+            <script type="text/javascript">
+                var text = document.getElementById('go')
+                var shadow = '';
+                for(var i = 0; i<5; i++)
+                {
+                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
+                }
+                text.style.textShadow = shadow;
+            </script>
+            <script type="text/javascript">
+                var text = document.getElementById('go2')
+                var shadow = '';
+                for(var i = 0; i<5; i++)
+                {
+                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
+                }
+                text.style.textShadow = shadow;
+            </script>
+            <script type="text/javascript">
+                var text = document.getElementById('go3')
+                var shadow = '';
+                for(var i = 0; i<5; i++)
                 {
                     shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
                 }
