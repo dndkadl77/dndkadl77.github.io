@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Condensed&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:0vh;
+    color:rgba(255, 255, 255, 0.05);
+    transform: scale(0.8);
+}
+.container
+{
+    position:relative;
+    width:1150px;
+    height: 1000px;
+    top: 150px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    transition:0.5s;
+    transform:skewY(-15deg);
+    animation-name: n1;
+    animation-duration: 2s;
+    z-index: 0;
+    /* border:solid 0.1px red; */
+    left:0px;
+    
+}
+
+@keyframes n1{
+    from{
+        margin-bottom:500px;
+    }
+    to{
+        margin-bottom:0;
+
+    }
+}
+.container .card
+{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background: #eee;
+    transition:0.5s;
+    margin-bottom: 130px;
+}
+
+
+.container .card:hover
+{
+    
+    transform:translateY(-40px);
+    z-index:999;
+    background-color: rgba(0, 0, 0, 0.7);
+   
+}
+    
+
+.container .card .imgBx    /* 여기가 카드 메인*/
+{
+    position:relative;
+    width:500px;
+    height:400px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    
+}
+.container .card .imgBx img
+
+{
+    max-width: 100%;
+}
+.container .card .imgBx h3
+{
+    position: relative;
+    color:#000;
+    margin-top:10px;
+    font-size: 80px;
+}
+
+.container > a {text-decoration: none;}
+
+
+.container .card:before
+{
+    content:'';
+    position:absolute;
+    top:-15px;
+    left:0;
+    width:100%;
+    height:15px;
+    background:#d9d9d9;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+.container .card:after
+{
+    content:'';
+    position:absolute;
+    top:-15px;
+    left:-15px;
+    width:15px;
+    height:50%;
+    background:#d9d9d9;
+    transform-origin: left;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    border-bottom:200px solid #d9d9d9;
+    
+}
+#title {
+    position: absolute;
+    color: #000;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    left: 33%;
+    top: -12%;
+    font-size: 70px;
+    font-weight: 700;
+    
+}
+
+.logo{
+    position: absolute;
+    left:-10%;
+    transform:skewY(-8deg);
+    top:-17%;
+    filter: invert(100%);
+    animation-name: n2;
+      animation-duration: 2s;
+      /* border:solid 0.1px red; */
+  }
+  .logo>img{
+    width:20%;
+}
+#name {
+    position: relative;
+    color: #000;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    left: 50%;
+    top: 20%;
+    /* font-size: 20px; */
+    /* font-weight: 900; */
+   
+    
+}
+
+.content{
+    position: relative;
+    left: 0%;
+    top: 3%;
+    
+    width: 500px;
+    height: 80px;
+
+}
+
+
+
+
+
+
+
+.nav{
+    position: absolute;
+}
+#button{
+    width:200px;
+    height: 1000px;
+    position: absolute;
+    left: 800px;
+    list-style: none;
+}
+.btn{
+    position: relative;
+    color: black;
+    display: flex;
+    padding: 20px;
+    font-size: 22px;
+    transition: 0.2s;
+    text-decoration: none;
+    width: 150px;
+    overflow: auto;
+}
+.btn:hover{
+    background-color: #999;
+    transition: 0.2s;
+    
+    
+
+}
+
+
+

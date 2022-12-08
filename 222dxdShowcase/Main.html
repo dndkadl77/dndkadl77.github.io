@@ -6,408 +6,7 @@
         <link rel="stylesheet" type="text/css" href="Main.css">
     </head>
     <style>
-        body{transform: scale(0.8);}
-        .container .poster-card
-        {
-            position: relative;
-            width: 510px;
-            height: 720px;
-            top: -320px;
-            /* left: -80px; */
-            background: #fff;
-            transition:0.5s;
-            z-index: 999;
-        }
-        .container .poster-card:before
-        {
-            content:'';
-            position:absolute;
-            top:-15px;
-            left:0;
-            width:100%;
-            height:15px;
-            background:#d9d9d9;
-            transform-origin: bottom;
-            transform: skewX(45deg);
-            transition: 0.5s;
-        }
-        .container .poster-card:after
-        {
-            content:'';
-            position:absolute;
-            top:-15px;
-            left:-15px;
-            width:15px;
-            height:72%;
-            background:#d9d9d9;
-            transform-origin: left;
-            transform: skewY(45deg);
-            transition: 0.5s;
-            border-bottom:200px solid #d9d9d9
-        }
-        .container .poster-card:hover
-        {
-            transform:translateY(-40px);
-            z-index: 999;
-        }
-
-        .container .poster-card .poster-imgBx    /* 여기가 카드 메인*/
-        {
-            position:relative;
-            width:510px;
-            height:720px;
-            background: #eee;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-        }
-        .container .poster-card .poster-imgBx img
-
-        {
-            max-width: 97%;
-            border-radius: 15px;
-        }
-        .container .poster-card .poster-imgBx h3
-        {
-            position: relative;
-            /* color:#fff; */
-            margin-top:10px;
-            font-size: 80px;
-        }
-
-        .container > a {text-decoration: none;}
-
-        /* .container .card .content
-        {
-            position: relative;
-            width:100%;
-            height:200px;
-            padding:15px;
-            color:rgb(19, 19, 19);
-            text-align: center;
-            background: #fff;
-        } */
-        .container .poster-card .poster-content:before
-        {
-            content:'';
-            position: absolute;
-            left:0;
-            bottom:0;
-            width:100%;
-            height:400px;
-            background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3));
-            transform-origin: bottom;
-            transform: skewX(45deg);
-            transition:0.5s;
-            pointer-events: none;
-            z-index: -1;
-        }
-        .container .poster-card:hover .poster-content:before
-        {
-            transform:translateY(40px)skewX(45deg);
-            filter: blur(5px);
-            opacity: 0.5;
-        }
-
-        #title {
-            position: absolute;
-            color: #000;
-            transform: translate(-50%, -50%);
-            width: 720px;
-            left: 65%;
-            top: -25%;
-            font-size: 100px;
-        }
-        /* ---------------------------------------------------------------- */
-        .container .poster-card_2
-        {
-            position: absolute;
-            width: 510px;
-            height: 720px;
-            top: -400px;
-            left: -78px;
-            background: #fff;
-            transition:0.5s;
-            z-index: 888;
-        }
-        .container .poster-card_2:before
-        {
-            content:'';
-            position:absolute;
-            top:-15px;
-            left:0;
-            width:100%;
-            height:15px;
-            background:#d9d9d9;
-            transform-origin: bottom;
-            transform: skewX(45deg);
-            transition: 0.5s;
-        }
-        .container .poster-card_2:after
-        {
-            content:'';
-            position:absolute;
-            top:-15px;
-            left:-15px;
-            width:15px;
-            height:72%;
-            background:#d9d9d9;
-            transform-origin: left;
-            transform: skewY(45deg);
-            transition: 0.5s;
-            border-bottom:200px solid #d9d9d9
-        }
-        .container .poster-card_2:hover
-        {
-            transform:translateX(-200px);
-            z-index: 888;
-        }
-
-        .container .poster-card_2 .poster-imgBx_2    /* 여기가 카드 메인*/
-        {
-            position:relative;
-            width:510px;
-            height:720px;
-            background: #eee;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-        }
-        .container .poster-card_2 .poster-imgBx_2 img
-
-        {
-            max-width: 97%;
-            border-radius: 15px;
-        }
-        .container .poster-card_2 .poster-imgBx_2 h3
-        {
-            position: relative;
-            /* color:#fff; */
-            margin-top:10px;
-            font-size: 80px;
-        }
-
-        .container > a {text-decoration: none;}
-
-        /* .container .card .content
-        {
-            position: relative;
-            width:100%;
-            height:200px;
-            padding:15px;
-            color:rgb(19, 19, 19);
-            text-align: center;
-            background: #fff;
-        } */
-        .container .poster-card_2 .poster-content_2:before
-        {
-            content:'';
-            position: absolute;
-            left:0;
-            bottom:0;
-            width:100%;
-            height:400px;
-            /* background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3)); */
-            transform-origin: bottom;
-            transform: skewX(45deg);
-            transition:0.5s;
-            pointer-events: none;
-            z-index: -1;
-        }
-        .container .poster-card_2:hover .poster-content_2:before
-        {
-            filter: blur(5px);
-            opacity: 0.5;
-        }
-        /* ------------------------------------------------------------------ */
-
-        .container .aw_card
-        {
-            position: absolute;
-            left: 830px;
-            top: 500px;
-            width: 400px;
-            height: 100px;
-            background: #d9d9d9;
-            transition:0.5s;
-        }
-        .container .aw_card:before
-        {
-            content:'';
-            position:absolute;
-            top:-15px;
-            left:0;
-            width:100%;
-            height:15px;
-            background:#d9d9d9;
-            transform-origin: bottom;
-            transform: skewX(45deg);
-            transition: 0.5s;
-        }
-        .container .aw_card:after
-        {
-            content:'';
-            position:absolute;
-            top:-15px;
-            left:-15px;
-            width:15px;
-            /* height:1%; */
-            background:#d9d9d9;
-            transform-origin: left;
-            transform: skewY(45deg);
-            transition: 0.5s;
-            border-bottom:100px solid #d9d9d9;
-        }
-        .container .aw_card:hover
-        {
-            transform:translateY(-40px);
-        }
-
-        .container .aw_card .aw_imgBx    /* 여기가 카드 메인*/
-        {
-            position:relative;
-            width:400px;
-            height:100px;
-            background: #eee;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 990;
-        }
-        .container .aw_card .aw_imgBx img
-
-        {
-            max-width: 100%;
-        }
-        .container .aw_card .aw_imgBx h3
-        {
-            position: relative;
-            color:#000;
-            /* margin-top:px; */
-            font-size: 50px;
-        }
-
-        .container > a {text-decoration: none;}
-
-        .container .aw_card .aw_content:before
-        {
-            content:'';
-            position: absolute;
-            left:0;
-            bottom:0;
-            width:100%;
-            height:100px;
-            background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.3));
-            transform-origin: bottom;
-            transform: skewX(45deg);
-            transition:0.5s;
-            pointer-events: none;
-            z-index: -10;
-        }
-        .container .aw_card:hover .aw_content:before
-        {
-            transform:translateY(40px)skewX(45deg);
-            filter: blur(5px);
-            opacity: 0.5;
-        }
-
-        /* ----------------------------------------menu-------------------------------------- */
-
-        #menu {
-            position: absolute;
-            display: flex;
-            top: 130%;
-            left: 64%;
-            }
-        #icon{
-            list-style: none;
-            margin: 0 20px;
-            
-        }
-        #icon:hover{
-            transform: translateY(-20px);
-            transition: 0.3s;
-        }
-        #font{
-            font-size: 20px;
-            color: #000;
-            text-decoration: none;
-            line-height: 40px;
-            transition: 0.5s;
-            position: relative;
-            display: block;
-            width: 40px;
-            height: 40px;
-            background: #eee;
-            text-align: center;
-        }
-        #font::before{
-            content: '';
-            position: absolute;
-            top: -5px;
-            left: -10px;
-            height: 100%;
-            width: 10px;
-            background: #d9d9d9;
-            transition: 0.5s;
-            transform: skewY(45deg);
-            
-        }
-        #font::after{
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -5px;
-            height: 10px;
-            width: 100%;
-            background: #d9d9d9;
-            transition: 0.5s;
-            transform: skewX(45deg);
-        }
-        #font:hover{
-            color: #fff;
-        }
-        #icon:hover:nth-child(1) #font{
-            background: #6667ab;
-        }
-        #icon:hover:nth-child(1) #font::before{
-            background: #55568d;
-        }
-        #icon:hover:nth-child(1) #font::after{
-            background: #6f71ba;
-        }
-
-        #icon:hover:nth-child(2) #font{
-            background: #3b5999;
-        }
-        #icon:hover:nth-child(2) #font::before{
-            background: #2d4374;
-        }
-        #icon:hover:nth-child(2) #font::after{
-            background: #496ebe;
-        }
-
-        #icon:hover:nth-child(3) #font{
-            background: #e4405f;
-        }
-        #icon:hover:nth-child(3) #font::before{
-            background: #b5334b;
-        }
-        #icon:hover:nth-child(3) #font::after{
-            background: #f65976;
-        }
-
-        #icon:hover:nth-child(4) #font{
-            background: #777;
-        }
-        #icon:hover:nth-child(4) #font::before{
-            background: #555;
-        }
-        #icon:hover:nth-child(4) #font::after{
-            background: #999;
-        }
+        
     </style>
     <body>
     
@@ -428,32 +27,6 @@
                 </div>
             </a>
 
-            <!-- <a class="card" href="#">
-                <div class="imgBx">
-                    
-                    <h3>1</h3>
-                </div>
-                <div class="content">
-                </div>
-            </a>
-
-            <a class="card" href="#">
-                <div class="imgBx">
-                    
-                    <h3>2</h3>
-                </div>
-                <div class="content">
-                </div>
-            </a>
-
-            <a class="card" href="#">
-                <div class="imgBx">
-                    
-                    <h3>3</h3>
-                </div>
-                <div class="content">
-                </div>
-            </a> -->
             <a class="aw_card" href="#">
                 <div class="aw_imgBx">
                     
@@ -465,36 +38,40 @@
 
             <ul id="list-menu">
                 <h6 id="go">3학년</h6>
-                <li id="list" style="--i:5;"><a href="#" style="text-decoration:none ;"><span>디지털디자인2</span></a></li>
-                <li id="list" style="--i:4;"><a href="#" style="text-decoration:none ;"><span>디지털콘텐츠디자인2</span></a></li>
-                <li id="list" style="--i:3;"><a href="#" style="text-decoration:none ;"><span>피지컬컴퓨팅</span></a></li>
-                <li id="list" style="--i:2;"><a href="#" style="text-decoration:none ;"><span>사용자경험디자인</span></a></li>
-                <li id="list" style="--i:1;"><a href="#" style="text-decoration:none ;"><span>고급디지털표현</span></a></li>
+                <a href="grade1.html" style="text-decoration:none ;"><li id="list" style="--i:5;"><span>디지털디자인2</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:4;"><span>디지털콘텐츠디자인2</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:3;"><span>피지컬컴퓨팅</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:2;"><span>사용자경험디자인</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:1;"><span>고급디지털표현</span></li></a>
             </ul>
             <ul id="list-menu">
                 <h6 id="go2">2학년</h6>
-                <li id="list" style="--i:5;"><a href="#" style="text-decoration:none ;"><span>앤터테인먼트디자인1</span></a></li>
-                <li id="list" style="--i:4;"><a href="#" style="text-decoration:none ;"><span>디지털사진</span></a></li>
-                <li id="list" style="--i:3;"><a href="#" style="text-decoration:none ;"><span>디지털비디오</span></a></li>
-                <li id="list" style="--i:2;"><a href="#" style="text-decoration:none ;"><span>디지털디자인1</span></a></li>
-                <li id="list" style="--i:1;"><a href="#" style="text-decoration:none ;"><span>3D컴퓨터그래픽스</span></a></li>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:5;"><span>디지털디자인1</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:4;"><span>디지털비디오</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:3;"><span>디지털사진</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:2;"><span>3D컴퓨터그래픽스2</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:1;"><span>엔터테인먼트디자인1</span></li></a>
             </ul>
             <ul id="list-menu">
                 <h6 id="go3">1학년</h6>
-                <li id="list" style="--i:5;"><a href="#" style="text-decoration:none ;"><span>디자인발상과리서치</span></a></li>
-                <li id="list" style="--i:4;"><a href="#" style="text-decoration:none ;"><span>스토리텔링과디자인</span></a></li>
-                <li id="list" style="--i:3;"><a href="#" style="text-decoration:none ;"><span>타입페이스와뉴미디어</span></a></li>
-                <li id="list" style="--i:2;"><a href="#" style="text-decoration:none ;"><span>컴퓨터그래픽스2</span></a></li>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:5;"><span>디자인발상과리서치</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:4;"><span>스토리텔링과디자인</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:3;"><span>타입페이스와뉴미디어</span></li></a>
+                <a href="#" style="text-decoration:none ;"><li id="list" style="--i:2;"><span>컴퓨터그래픽스2</span></li></a>
             </ul>
 
             <ul id="menu">
-                <li id="icon"><a href="#" id="font"><i class="fa-regular fa-question"></i></a></li>
+                <li id="icon"><a href="about2.html" id="font"><i class="fa-regular fa-question"></i></a></li>
                 <li id="icon"><a href="https://www.facebook.com/dxdesign.cu.ac.kr/" id="font" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
                 <li id="icon"><a href="https://www.instagram.com/dcudxd/" id="font" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li id="icon"><a href="http://dxdesign.kr/" id="font" target="_blank">디</a></li></ul>
             </ul>
-
         </div>
+
+            <script src="/js/jquery-3.6.1.js"></script>
+            <script src="/js/jquery.easing.min.js"></script>
+            <script src="/js/subject.js"></script>
+            <script>AOS.init();</script>
              <script src="https://kit.fontawesome.com/704cc29208.js" crossorigin="anonymous"></script>
              <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
              <script>
@@ -507,7 +84,7 @@
             </script>
 
             <script type="text/javascript">
-                var text = document.getElementById('#title')
+                var text = document.getElementById('title')
                 var shadow = '';
                 for(var i = 0; i<10; i++)
                 {
