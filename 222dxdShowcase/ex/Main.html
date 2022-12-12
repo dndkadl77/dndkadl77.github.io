@@ -12,9 +12,16 @@
         
     </style>
     <body>
-    
+        <!-- <div id="poster">
+            <img src="../img/221poster_1.gif" alt="" id="poster-img">
+        </div>
+        <div id="dxdaward">
+            <a href="#"><h1 id="title">DxD Award</h1></a>
+        </div> -->
+
+            
+
         <div class="container">
-            <h1 id="title"> DxD Showcase222</h1>
             <a class="poster-card" href="#">
                 <div class="poster-imgBx">
                     <img src="/Showcase221/images/221poster_2.png" alt="">
@@ -22,25 +29,15 @@
                 <div class="poster-content">
                 </div>
             </a>
-            <a class="poster-card_2" href="#">
-                <div class="poster-imgBx_2">
-                    <img src="/Showcase221/images/212poster.jpeg" alt="">
-                </div>
-                <div class="poster-content_2">
-                </div>
-            </a>
 
             <a class="aw_card" href="#">
-                <div class="aw_imgBx">
-                    
                     <h3>DxDesign Award</h3>
-                </div>
                 <div class="aw_content">
                 </div>
             </a>
-
+        
             <ul id="list-menu">
-                <h6 id="go">3학년</h6>
+                <h6 id="text">3학년</h6>
                 <a href="grade1.html" style="text-decoration:none ;"><li id="list" style="--i:5;"><span>디지털디자인2</span></li></a>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:4;"><span>디지털콘텐츠디자인2</span></li></a>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:3;"><span>피지컬컴퓨팅</span></li></a>
@@ -48,7 +45,7 @@
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:1;"><span>고급디지털표현</span></li></a>
             </ul>
             <ul id="list-menu">
-                <h6 id="go2">2학년</h6>
+                <h6>2학년</h6>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:5;"><span>디지털디자인1</span></li></a>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:4;"><span>디지털비디오</span></li></a>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:3;"><span>디지털사진</span></li></a>
@@ -56,7 +53,7 @@
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:1;"><span>엔터테인먼트디자인1</span></li></a>
             </ul>
             <ul id="list-menu">
-                <h6 id="go3">1학년</h6>
+                <h6 id="text">1학년</h6>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:5;"><span>디자인발상과리서치</span></li></a>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:4;"><span>스토리텔링과디자인</span></li></a>
                 <a href="#" style="text-decoration:none ;"><li id="list" style="--i:3;"><span>타입페이스와뉴미디어</span></li></a>
@@ -76,7 +73,7 @@
             <script src="/js/subject.js"></script>
             <script>AOS.init();</script>
              <script src="https://kit.fontawesome.com/704cc29208.js" crossorigin="anonymous"></script>
-             <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+             <!-- <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
              <script>
                 VanillaTilt.init(document.querySelectorAll(".imgBx"),{
                 max: 0,
@@ -84,19 +81,10 @@
                 glare: true,
                 "max-glare":1,
                 });
-            </script>
+            </script> -->
 
             <script type="text/javascript">
-                var text = document.getElementById('title')
-                var shadow = '';
-                for(var i = 0; i<10; i++)
-                {
-                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
-                }
-                text.style.textShadow = shadow;
-            </script>
-            <script type="text/javascript">
-                var text = document.getElementById('go')
+                var text = document.getElementById('text')
                 var shadow = '';
                 for(var i = 0; i<5; i++)
                 {
@@ -104,23 +92,7 @@
                 }
                 text.style.textShadow = shadow;
             </script>
-            <script type="text/javascript">
-                var text = document.getElementById('go2')
-                var shadow = '';
-                for(var i = 0; i<5; i++)
-                {
-                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
-                }
-                text.style.textShadow = shadow;
-            </script>
-            <script type="text/javascript">
-                var text = document.getElementById('go3')
-                var shadow = '';
-                for(var i = 0; i<5; i++)
-                {
-                    shadow +=(shadow? ',':'')+ -i*1+'px '+ -i*1+'px 0 #d9d9d9';
-                }
-                text.style.textShadow = shadow;
-            </script>
+
+            
     </body>
 </html>
