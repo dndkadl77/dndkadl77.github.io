@@ -104,13 +104,14 @@ body{
     height: 550px;
 }
 
-#list-menu h6 {
+#text {
     color: #000;
     position: absolute;
-    top: -170px;
+    top: -110px;
     left: 30px;
-    font-size: 40px;
+    font-size: 20px;
     z-index: 10;
+    margin: 0;
 }
 #list {
     position: relative;
