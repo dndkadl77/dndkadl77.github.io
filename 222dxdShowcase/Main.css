@@ -516,8 +516,8 @@ a {text-decoration: none;}
         position:relative;
         width:720px;
         height: 570px;
-        top:130px;
-        left: -15px;
+        top:160px;
+        left: -17px;
         display:flex;
         flex-wrap:wrap;
         justify-content: space-between;
@@ -623,7 +623,7 @@ a {text-decoration: none;}
         position: absolute;
         display: flex;
         top: 700px;
-        left: 50%;
+        left: 51.5%;
         transform: translateX(-50%);
         }
     #icon{
@@ -646,7 +646,7 @@ a {text-decoration: none;}
         height: 80px;
         background: #eee;
         text-align: center;
-        border-radius: 10px;
+        border-radius: 15px;
     }
     #font::before{
         content: '';

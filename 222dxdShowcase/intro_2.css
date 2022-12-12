@@ -40,3 +40,41 @@ body{
     transition: 1s;
     color: #666;
 }
+
+@media screen and (max-width: 720px){
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+    min-height:90vh;
+    background:#f1f1f1;
+    overflow-x: hidden;
+}
+#text {
+    position: relative;
+    top: -30px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 4em;
+    line-height: 0.9em;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotate(0deg) skew(0deg);
+}
+#text::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 30px;
+    left: -35px;
+    color: rgba(0,0,0,0.3);
+    text-shadow: none;
+    filter: blur(20px);
+    z-index: -1;
+}
+#text:hover {
+    font-size: 20em;
+    transition: 1s;
+    color: #666;
+}
+}
