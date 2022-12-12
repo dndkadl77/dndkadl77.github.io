@@ -73,7 +73,7 @@ body{
     z-index: -1;
 }
 #text:hover {
-    font-size: 20em;
+    font-size: 4em;
     transition: 1s;
     color: #666;
 }

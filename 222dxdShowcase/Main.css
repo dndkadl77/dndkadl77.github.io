@@ -833,7 +833,7 @@ a {text-decoration: none;}
         height:0;
         background:#d9d9d9;
         transform-origin: bottom;
-        transform: skewX(45deg);
+        transform: skewX(0eg);
         transition: 0.5s;
     }
     .aw_card:after
@@ -845,20 +845,20 @@ a {text-decoration: none;}
         width:0;
         background:#d9d9d9;
         transform-origin: left;
-        transform: skewY(45deg);
+        transform: skewY(0deg);
         transition: 0.5s;
-        border-bottom: 70px solid #d9d9d9;
+        border-bottom: 0px solid #d9d9d9;
     }
     .aw_card:hover
     {
-        transform:translateY(-20px);
+        transform:translate(0px);
         background: #6667ab;
     }
     .aw_card:hover h3 {
         color: #fff;
     }
     .aw_card:hover::after {
-        border-bottom: 70px solid #55568d;
+        border-bottom: 0px solid #55568d;
     }
     .aw_card:hover::before {
         background: #6f71ba;
@@ -890,14 +890,14 @@ a {text-decoration: none;}
         height:0;
         background: linear-gradient(transparent,transparent,rgba(154, 154, 154, 0.7));
         transform-origin: bottom;
-        transform: skewX(45deg);
+        transform: skewX(0deg);
         transition:0.5s;
         pointer-events: none;
         z-index: -10;
     }
     .aw_card:hover .aw_content:before
     {
-        transform:translateY(20px)skewX(45deg);
+        transform:translateY(0px)skewX(0deg);
         filter: blur(5px);
         opacity: 0.5;
     }
