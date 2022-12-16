@@ -25,7 +25,7 @@ body{
     position:relative;
     width:1650px;
     height: 570px;
-    top: 300px;
+    top: 250px;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
