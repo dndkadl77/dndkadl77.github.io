@@ -352,7 +352,7 @@ input[id="menuicon"]:checked +label{
         min-height:0vh;
         color:#eee;
         transform: scale(0.5);
-        overflow: hidden;
+        overflow: scroll;
     }
     .container
     {
@@ -370,7 +370,6 @@ input[id="menuicon"]:checked +label{
         z-index: 0;
         /* border:solid 0.1px red; */
         left:-200px;
-        
     }
 
     .container .card
