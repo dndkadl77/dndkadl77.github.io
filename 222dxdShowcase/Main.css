@@ -18,7 +18,7 @@ body{
     background: #d3d3d3;
     transform:skewY(-13deg);
     font-family: 'Noto Sans KR', sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .container
 {
