@@ -7,7 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="style.css">
-    <title>DxDesign Award 2022-2</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>DxDesign Award</title>
 
 
 
@@ -17,7 +19,7 @@
 	
 	
 	.links {
-		color: #eaebec;
+		color: #000;
 	}
 	.links:hover {
 		color: #BFA9FE;
@@ -25,17 +27,17 @@
 
 	
 	body {
-		background-image: url(images/dxdaward.jpg);
-		background-size: contain;
-background-color: #000000;
--ms-overflow-style: none;
--webkit-touch-callout: none; 
-user-select: none; 
--moz-user-select: none; 
--ms-user-select: none; 
--webkit-user-select: none;
-padding: 0;
-margin: 0;
+	background-image: url(images/dxdaward.jpg);
+	background-size: contain;
+	background-color: #d3d3d3;
+	-ms-overflow-style: none;
+	-webkit-touch-callout: none; 
+	user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-webkit-user-select: none;
+	padding: 0;
+	margin: 0;
 } 
 
 
@@ -50,7 +52,7 @@ margin: 0;
 		padding-top: 40px;
 		margin-bottom: 40px;
 		position: fixed;
-		background-color: #000000;
+		background-color: #d3d3d3;
 		z-index: 99;
 		display: flex;
 		flex-direction: row;
@@ -184,14 +186,14 @@ h5{font-weight: 100; line-height: 1.4;}
 position: relative;
 display: flex;
 flex-direction: column;
-justify-content: center;  
+justify-content: center;
 width: 100%;
 top: 100px;
 opacity: 100%;
 align-items: left;
-margin-top: 100px;
+/* margin-top: 100px; */
 margin-bottom: 100px;
-color: #ffffff;
+color: #000;
 line-height: 40px;
 font-weight: 100;
 font-family: 'Noto Sans KR', sans-serif;
@@ -432,7 +434,7 @@ font-family: 'Noto Sans KR', sans-serif;
 			 @media screen and (max-width: 720px) {
 				 
 body { 
-	background-color: #000000;
+	background-color: #d3d3d3;
     -ms-overflow-style: none;
 	-webkit-touch-callout: none; 
 	user-select: none; 
@@ -441,6 +443,7 @@ body {
 	-webkit-user-select: none;
 	padding: 0;
 	margin: 0;
+	transform: skewY(0deg);
    } 
    
    
@@ -483,7 +486,7 @@ body {
 		#subject{
 			position: relative;
 
-			color: #ffffff;
+			color: #000;
 			font-size: 16px;
 			font-weight: 400;
 			font-family: 'Noto Sans KR', sans-serif;
@@ -583,8 +586,8 @@ flex-direction: column;
 justify-content: center;  
 width: 90%;
 margin: 0 auto;
-margin-top: 00px;
-color: #ffffff;
+/* margin-top: 30px; */
+color: #000;
 line-height: 1.4;
 font-weight: 400;
 font-family: 'Noto Sans KR', sans-serif;
@@ -672,21 +675,21 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 
 	<div id="nav">
 		<div id="navComp_a">
-			<div id="exit"><img src="images/left.svg"></div>
-			<p id="exitNoti">홈으로</p>
+			<div id="exit"><a href="index.html"><img src="img/left.svg"></a></div>
+			<p id="exitNoti">돌아가기</p>
 		</div>
 		<div id="navComp_b">
-			<p id="subject">DxDesign Award 2022-2</p>
+			<!-- <p id="subject">About Showcase</p> -->
 		</div>
 		<div id="navComp_c">
-			<div id="ham"><img src="images/ham.svg"></div>
+			<div id="ham"><img src="img/ham.svg"></div>
 		</div>
 			
 			
 			
 		<div id="burger">
 			
-			<img id="burger_x" src="images/Xw.svg">
+			<img id="burger_x" src="img/Xw.svg">
 	
 			<div class='category'>
 				<a class="neck" href="dxdaward.html">DxDesign Award</a>
@@ -701,33 +704,33 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 			</div>
 			<div class='category'>
 				<p class="head">3학년</p>
-				<a class="neck" href="3_dd2.html">디지털디자인2</a>
-				<br><br>
-				<a class="neck" href="3_dcd2.html">디지털콘텐츠디자인2</a>
-				<br><br>
-				<a class="neck" href="3_pc.html">피지컬컴퓨팅</a>
-				<br><br>
 				<a class="neck" href="3_uxd.html">사용자경험디자인</a>
 				<br><br>
 				<a class="neck" href="3_adx.html">고급디지털표현</a>
+				<br><br>
+				<a class="neck" href="3_dd2.html">디지털디자인2</a>
+				<br><br>
+				<a class="neck" href="3_dc2.html">디지털콘텐츠디자인2</a>
+				<br><br>
+				<a class="neck" href="3_pc.html">피지컬컴퓨팅</a>
 				<br><br><br>
 				<p class="head">2학년</p>
 				<a class="neck" href="2_dd1.html">디지털디자인1</a>
 				<br><br>
-				<a class="neck" href="2_3dcg2.html">3D컴퓨터그래픽스2</a>
+				<a class="neck" href="2_dp.html">디지털사진</a>
 				<br><br>
 				<a class="neck" href="2_dv.html">디지털비디오</a>
 				<br><br>
-				<a class="neck" href="2_dp.html">디지털사진</a>
+				<a class="neck" href="2_cg2.html">3D컴퓨터그래픽스2</a>
 				<br><br>
 				<a class="neck" href="2_ed1.html">엔터테인먼트디자인1</a>
 				<br><br><br>
 				<p class="head">1학년</p>
-				<a class="neck" href="1_dir.html">디자인발상과리서치</a>
-				<br><br>
 				<a class="neck" href="1_sd.html">스토리텔링과디자인</a>
 				<br><br>
-				<a class="neck" href="1_tfnm.html">타입페이스와뉴미디어</a>
+				<a class="neck" href="1_dr.html">디자인발상과리서치</a>
+				<br><br>    
+				<a class="neck" href="1_typ.html">타입페이스와뉴미디어</a>
 				<br><br>
 				<a class="neck" href="1_cg2.html">컴퓨터그래픽스2</a>
 			</div>
@@ -740,7 +743,7 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 
 
 
-<div id="container">
+<div id="container" data-aos="fade-up" data-aos-duration="1000">
 
 	
 	
@@ -750,8 +753,28 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 <br>
 <h3>2021년부터 디지털디자인과는 창의적이고 학문적인 분위기를 조성하고 학생의 자긍심과 소속감을 함양하고자 기존의 우리 학과 수상제도를 확대·개편하여 공식수상제도를 수립하고 시행합니다.</h3>
 <br>
-<a class="links" href="images/dxdesignaward/DxDesign_Award_2021.pdf" onclick="window.open(this.href, '_blank', 'width=630px,height=891,toolbars=no,scrollbars=no'); return false;">DxDesign Award 수상제도 자세히 보기</a>
+<a class="links" href="img/DxDesign_Award_2021.pdf" onclick="window.open(this.href, '_blank', 'width=630px,height=891,toolbars=no,scrollbars=no'); return false;">DxDesign Award 수상제도 자세히 보기</a>
 <br><br>
+<br><br><br>
+
+<h1>수상부문</h1><br>
+<h2>Honorable DXDesigner of the year</h2>
+<h3>(올해의 디디人): 2021 신설</h3><br>
+<h2>Amazing DXDesigner Works of the semester</h2>
+<h3>(학기별 DxDesign 작품상): 기존 제도 유지</h3>
+<br><br><br>
+
+<h1>Honorable DXDesigner of the Year 올해의 디디人</h1><br>
+<h2>선정</h2>
+<h3>학기마다 2인(팀)을 후보자로 선정하고,<br> 2학기 최종 수상자를 선발<br>◦1학기 2인(팀), 2학기 2인(팀) 후보자 선정 후, 최종 1인(팀) 선발 시상</h3><br>
+<h2>특전</h2>
+<h3>온라인 과제전 홈페이지와 학과 공식 홈페이지에<br>영구 게시 및 소정의 상품 수여</h3>
+<h2>대상</h2>
+<h3>재학생(1-4학년)</h3>
+<h2>추천</h2>
+<h3>각 수업담당 교수님들이 수업에서 후보자를 추천하고, 수상위원에서 해당학기 2인(팀)의 후보자를 최정 선정</h3>
+<h2>추천방법 및 기준</h2>
+<h3>◦DxDesign Award 선정위원회(전임교수로 구성)가 수업담당교수가 추천한 후보자 중에서 최종선정<br>◦학과 봉사실적을 기준으로 추천<br>◦시범적으로 각 수업 과제전 우수상 수상자는 자동으로 포함<br>◦우수상 선정자 이외에 모범 후보자를 추가 추천 가능</h3>
 <br><br><br>
 
 
@@ -759,39 +782,39 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 
 	<h1>Honorable DxDesigner of the Year (올해의 디디人)</h1>
 	<br>
-<h2>2021년 최종 선정자 (Winner)</h2>
-<br>
-<img class="profile" src="images/dxdesignaward/award_profile.jpg">
-<br>
-<h2>황현우 (17학번, 3학년)</h2>
-<h3>황현우는 2021년 학과봉사 뿐만 아니라 학업에서도 가장 높은 발전과 성취를 이룬 학생으로 타의 모범이 되었기에 2021년도 올해의 디디人으로 선정합니다.</h3>
-<br>
-<br><br><br><br>
 
-<h2>2021년 2학기 후보자 (Nominator)</h2>
-<br>
-<img class="profile" src="images/dxdesignaward/award_profile.jpg">
-<br>
-<h2>이름 (학번, 학년)</h2>
-
-<br>
-<br>
-<img class="profile" src="images/dxdesignaward/award_profile.jpg">
-<br>
-<h2>이름 (학번, 학년)</h2>
-<br><br><br><br><br>
-
-<h2>2021년 1학기 후보자 (Nominator)</h2>
+	<h2>2022년 최종 선정자 (Winner)</h2>
 <br>
 
-<img class="profile" src="images/dxdesignaward/kimhani_a.jpeg">
+<img class="profile" src="img/award_profile.jpg">
+	<br>
+<h2>오정민 (20학번, 3학년)</h2>
 <br>
-<h2>김한이 (20학번, 3학년)</h2>
+<h2>2022년 2학기 후보자 (Nominator)</h2>
+<br>
+
+<img class="profile" src="img/award_profile.jpg">
+	<br>
+<h2>오정민 (20학번, 3학년)</h2>
+	<br>
+	<br>
+<img class="profile" src="img/award_profile.jpg">
+	<br>
+<h2>박다혜 (20학번, 3학년)</h2>
 <br>
 <br>
-<img class="profile" src="images/dxdesignaward/kimeunju_a.jpeg">
+
+<h2>2022년 1학기 후보자 (Nominator)</h2>
 <br>
+
+<img class="profile" src="img/kimhani_a.jpeg">
+	<br>
 <h2>김은주 (20학번, 3학년)</h2>
+	<br>
+	<br>
+<img class="profile" src="img/kimeunju_a.jpeg">
+	<br>
+<h2>김한이 (20학번, 3학년)</h2>
 
 
 
@@ -811,19 +834,6 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 
 <br><br><br>
 
-
-<h1>4학년</h1>
-<br>
-<h2>창의융합디자인2, <br>디지털콘텐츠디자인스튜디오2,<br>
-인포메이션디자인스튜디오2 통합</h2>
-<h3>
-우수상: Studio Wagglez<br>(황현우, 임관혁, 강현지) <br>
-우수상: Mediahead<br>(김세진, 최성근)<br>
-우수상: A to B<br>(최민영, 최지원, 임현)<br>
-</h3>
-<br><br>
-<br><br><br>
-
 <h1>3학년</h1>
 <br>
 <h2>디지털디자인2</h2>
@@ -837,6 +847,8 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 
 <br>
 <h2>피지컬컴퓨팅</h2>
+<h3>우수상: <br>(이름)</h3>
+<h3>우수상: <br>(이름)</h3>
 <h3>우수상: <br>(이름)</h3>
 <h3>노력상: <br>(이름)</h3>
 
@@ -856,66 +868,54 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 <h1>2학년</h1>
 <br>
 <h2>디지털디자인1</h2>
-<h3>노력상: <br>(홍수민)</h3>
-<h3>노력상: <br>(김하랑)</h3>
+<h3>우수상: 무인양품이야기<br>(홍수민)</h3>
+<h3>우수상: ABOUT STUSSY<br>(김하랑)</h3>
 
+<br>
+<h2>디지털비디오</h2>
+<h3>우수상: 뭘 하던지<br>(이주석, 정병찬, 조현진, 윤규리, 김나연)</h3>
+<h3>노력상: 이솝<br>(홍수민, 최효선, 박소희, 김지유, 백진욱)</h3>
+<br>
+
+
+<h2>디지털사진</h2>
+<h3>우수상: 색, 빛<br>(김창회)</h3>
+<h3>노력상: nani's Photo<br>(김나윤)</h3>
 <br>
 <h2>3D컴퓨터그래픽스2</h2>
-<h3>우수상: (나재민)</h3>
-<h3>노력상: (이숙미)</h3>
-<br>
-
-
-<h2>디지털비디오</h2>
-<h3>우수상: 컨버스<br>(이주석, 정병찬, 조현진, 윤규리, 김나연)</h3>
-<h3>노력상: 이솝<br>(홍수민, 최효선, 박소희, 백진욱, 김지유)</h3>
-<br>
-<h2>디지털사진</h2>
-<h3>우수상: <br>(김창화)</h3>
-<h3>노력상: <br>(김나윤)</h3>
+<h3>우수상: 3ds Max 탐험 : 애니메이션편<br>(나재민)</h3>
+<h3>노력상: fall in 3D<br>(이숙미)</h3>
 <br>
 <h2>엔터테인먼트디자인1</h2>
-<h3>우수상: <br>(윤정민, 장선빈)</h3>
-<h3>노력상: <br>(홍수민)</h3>
-<br><br>
-<br><br><br>
-
+<h3>우수상: 오늘의 캠퍼스<br>(장선빈, 윤정민)</h3>
+<h3>우수상: 마옹<br>(홍수민)</h3>
+<br><br><br><br><br>
 
 <h1>1학년</h1>
 <br>
 <h2>디자인발상과리서치</h2>
 <h3>우수상: <br>(이름)</h3>
 <h3>노력상: <br>(이름)</h3>
-<h3>노력상: <br>(이름)</h3>
 <br>
 <h2>스토리텔링과디자인</h2>
-<h3>우수상: <br>(이름)</h3>
-<h3>우수상: <br>(이름)</h3>
+<h3>우수상: <br>(권현우, 이준엽, 홍예지)</h3>
+<h3>노력상: <br>(김수아, 김지민, 박다혜, 윤정현)</h3>
+<h3>노력상: <br>(송가은, 이유나, 이정민, 정도영)</h3>
 <br>
 
 <h2>타입페이스와뉴미디어</h2>
-<h3>우수상: <br>(정찬희</h3>
-<h3>우수상: <br>(윤정민)</h3>
+<h3>우수상: <br>(정찬희)</h3>
+<h3>노력상: <br>(윤정민)</h3>
 <br>
+
 <h2>컴퓨터그래픽스2</h2>
-<h3>우수상: (정윤하)</h3>
-<h3>노력상: (정찬희)</h3>
+<h3>우수상: <br>(정윤하)</h3>
+<h3>노력상: <br>(정찬희)</h3>
+<br>
+<br>
 	</div>
 </div>
 
-
-
-</div>
-	
-	
-	
-	
-	<div id="footers">
-			<div id="footers_image"><img id="footer_image" src="images/dxd_logo_w.png"></div>
-			<p id="footer_text">대구가톨릭대학교 디지털디자인과<br>
-			38430 경상북도 경산시 하양읍 하양로 13-13 성카타리나관(D15)<br>
-			053-850-3920</p>
-	</div>
 
 <!--<div id="log">0</div>-->
 
@@ -924,82 +924,13 @@ h5{font-weight: 100; line-height: 1.4; margin: 0;}
 
 
 
-<div id='remote'>
-	<a><div id='quitMenu'><img src='images/x_white_24dp.svg'></div></a>
-    <div class='rLay'>
-		<a href='dxdaward.html'><div id='r1Button' class='rButton'><img src='images/star_rate_black_24dp.svg' class="icon"></div></a>
-		<p id="r1Text" class='rText'>DxDesign Award</p>
-	</div>
 
-    <div class='rLay'>
-	    <a><div id='r2Button' class='rButton'><img src='images/3_black_24dp.svg'></div></a>
-		<div id="s3" class='subjectPanel'>
-			<ul class='menu'><p class='grad'>3학년</p>
-				<li><a href='3_dd2.html' class="menuText">디지털디자인2</a></li>
-				<li><a href='3_dcd2.html' class="menuText">디지털콘텐츠디자인2</a></li>
-				<li><a href='3_pc.html' class="menuText">피지컬컴퓨팅</a></li>
-				<li><a href='3_uxd.html' class="menuText">사용자경험디자인</a></li>
-				<li><a href='3_adx.html' class="menuText">고급디지털표현</a></li>
-			</ul>
-		</div>
-	</div>
 
-    <div class='rLay'>
-    	<a><div id='r3Button' class='rButton'><img src='images/2_black_24dp.svg'></div></a>
-		<div id="s2" class='subjectPanel'>
-			<ul class='menu'><p class='grad'>2학년</p>
-				<li><a href='2_dd1.html' class="menuText">디지털디자인1</a></li>
-				<li><a href='2_3dcg2.html' class="menuText">3D컴퓨터그래픽스2</a></li>
-				<li><a href='2_dv.html' class="menuText">디지털비디오</a></li>
-				<li><a href='2_dp.html' class="menuText">디지털사진</a></li>
-				<li><a href='2_ed1.html' class="menuText">엔터테인먼트디자인1</a></li>
-			</ul>
-		</div>
-	</div>
-
-    <div class='rLay'>
-		<a><div id='r4Button' class='rButton'><img src='images/1_black_24dp.svg'></div></a>
-		<div id="s1" class='subjectPanel'>
-			<ul class='menu'><p class='grad'>1학년</p>
-				<li><a href='1_dir.html' class="menuText">디자인발상과리서치</a></li>
-				<li><a href='1_sd.html' class="menuText">스토리텔링과디자인</a></li>
-				<li><a href='1_tfnm.html' class="menuText">타입페이스와뉴미디어</a></li>
-				<li><a href='1_cg2.html' class="menuText">컴퓨터그래픽스2</a></li>
-			</ul>
-		</div>	
-	</div>
-
-    <div class='rLay'>
-		<a href='about.html'><div id='r5Button' class='rButton'><img src='images/q_black_24dp.svg'></div></a>
-		<p id="r5Text" class='rText'>About Showcase</p>
-	</div>
-
-    <div class='rLay'>
-		<div class='rEmptyButton'></div>
-	</div>
-
-    <div class='rLay'>
-		<a href='http://dxdesign.kr' target='_blank'><div id='r6Button' class='rButton'><img src='images/dxd_black_24dp.svg'></div></a>
-		<p id="r6Text" class='rText'>DxD ⤴</p>
-	</div>
-
-    <div class='rLay'>
-		<a href='https://www.facebook.com/dxdesign.cu.ac.kr/' target='_blank'><div id='r7Button' class='rButton'><img src='images/facebook_black_24dp.svg'></div></a>
-		<p id="r7Text" class='rText'>Facebook ⤴</p>
-	</div>
-
-	<div class='rLay'>
-		<a href='https://www.instagram.com/dcudxd/' target='_blank'><div id='r8Button' class='rButton'><img src='images/instagram_black_24dp.svg'></div></a>
-		<p id="r8Text" class='rText'>Instagram ⤴</p>
-	</div>
-
-</div>
-
-<script src="jquery-3.5.1.js"></script>
-<script src="jquery.easing.min.js"></script>
-<script src="jquery.lettering.js"></script>
-<script src="jquery.textillate.js"></script>
-<script src="subject.js"></script>
+<script src="/js/jquery-3.6.1.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
+<script src="/js/subject.js"></script>
+<script>AOS.init();</script>
+<script src="https://kit.fontawesome.com/704cc29208.js" crossorigin="anonymous"></script>
 </body>
     
 </html>

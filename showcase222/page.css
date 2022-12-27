@@ -1,0 +1,97 @@
+
+
+body {
+    background-color: #444444;
+    /* height: 2000px; */
+}
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 60px;
+}
+
+.panel {
+    overflow: hidden;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    opacity: 0%;
+    border-radius: 27px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.logo{
+    position: fixed;
+    transform:skewY(0deg);
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    position: fixed;
+    cursor: pointer;
+    z-index: 4;
+    left: 50px;
+    top: 70px;
+    transition: all 0.35s;
+    animation-name: m3;
+    animation-duration: 2s; 
+  }
+
+.logo>img{
+width:100%;
+}
+
+@media screen and (max-width:720px) {
+    body {
+        background-color: #444444;
+        /* height: 2000px; */
+    }
+    .container {
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* top: 60px; */
+    }
+    
+    .panel {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        opacity: 0%;
+        border-radius: 27px;
+        margin-bottom: 30px;
+    }
+    
+    .logo{
+        transform:skewY(0deg);
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 4;
+        left: 30px;
+        top: 30px;
+        transition: all 0.35s;
+        animation-name: m3;
+        animation-duration: 2s; 
+      }
+    
+    .logo>img{
+    width:40%;
+    }
+}
