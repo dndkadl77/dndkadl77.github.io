@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 *
 {
     margin:0;
@@ -26,6 +26,7 @@ body{
     /* transform: scale(0.8); */
     background: #d3d3d3;
     /* overflow: hidden; */
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .container
 {
@@ -140,7 +141,7 @@ body{
     top: -12%;
     font-size: 60px;
     font-weight: 700;
-    
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .logo{
@@ -163,6 +164,7 @@ body{
     /* width: 200px; */
     left: 50%;
     top: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 input[id="menuicon"]{
@@ -259,7 +261,7 @@ input[id="menuicon"]:checked +label{
 }
 
 .top{
-    
+    font-family: 'Noto Sans KR', sans-serif;
      
     position: fixed;
     margin-top:30px;
@@ -333,6 +335,13 @@ input[id="menuicon"]:checked +label{
     display: none;
 }
 
+p{font-family: 'Noto Sans KR', sans-serif;}
+h1{font-family: 'Noto Sans KR', sans-serif;}
+h2{font-family: 'Noto Sans KR', sans-serif;}
+h3{font-family: 'Noto Sans KR', sans-serif;}
+h4{font-family: 'Noto Sans KR', sans-serif;}
+h5{font-family: 'Noto Sans KR', sans-serif;}
+h6{font-family: 'Noto Sans KR', sans-serif;}
 
 @media screen and (max-width:720px) {
     body{
@@ -342,6 +351,7 @@ input[id="menuicon"]:checked +label{
         min-height:0vh;
         color:#d3d3d3;
         transform: scale(0.5);
+        /* overflow: hidden; */
     }
     .container
     {
@@ -466,9 +476,9 @@ input[id="menuicon"]:checked +label{
         position: relative;
         color: #000;
         transform: translate(-50%, -50%);
-        width: 100px;
-        left: 10%;
-        top: 70px;
+        width: 500px;
+        left: 45%;
+        top: 75px;
     }
     
     
@@ -579,6 +589,7 @@ input[id="menuicon"]:checked +label{
         background: rgba(194, 194, 194, 0.708);
         box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
         transform: scale(1.7);
+        /* overflow: hidden; */
     }
     
     .top{
